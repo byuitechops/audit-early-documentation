@@ -1,5 +1,5 @@
 # Project Capture Document for Audit: _Start Date_ 
-#### *Author: * Evgeniy Bekker
+#### *Author:* Evgeniy Bekker
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 16:55*
 
