@@ -58,7 +58,7 @@ Audit Project class
 <!-- What is the deadline? 2019 Sep 1? -->
 <!-- What priority is this audit? -->
 
-Currently the plan is to finish this audit by September 1st 2019
+    Currently the plan is to finish this audit by September 1st 2019
 -----
 
 #### *Approved By:* 
