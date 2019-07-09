@@ -3,43 +3,17 @@
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 3:21*
 ## Background
-<!-- 
-Explain the context of the problem.
-Explain key terms/words, words that may be unfamiliar to a new hire.
-Do Example: 
-    
-    Corey and his team have been manually going through the html for all images in canvas and entering alt image text.
-    This has been very time consuming.
-Don't Example:
-    Without project templates, we have been left with readmes that share all different kinds of data, and some of them were missing key
-    points of data. Additionally, we have no standard for code templates. We don't want to add a lot of overhead to setting up a project
-    with templates and code setup.
--->
 -----
-Some classes after their conversion could have a problem with not having the right end date. This could be a problem because not having the right end dates could be a big issue for students. This is a high priority audit. This audit will make an api call to get all of the end dates, and make sure that they are correct.
+Some classes after their conversion could have a problem with not having the right end date. (e.g. A fall course should have its end date be in December. If it were in July, which is a spring end date, it would be incorrect and would need to be changed). This could be a problem because not having the right end dates could be a big issue for students. This is a high priority audit. This audit will make an api call to get all of the end dates, and make sure that they are correct.
 
 ## Definition of Done
-<!-- 
-What is/are the project outcome(s)?
-("Can you give me one sentence describing what you want done?")
-We are trying to clean up the yard by Mow, Edge, and Rake.
-Do Example:
-    We are creating a tool to find all images that are in need of alt text in canvas 
-    which will automate this process by showing an image and prompting for alt text.
-Don't Example 2:
-    We are using yeoman to create a generator that will add all needed documentation and
-    set up the code with all needed scripts, templates, and integrations.
--->
 -----
 We are creating this audit so we can check whether the end dates for courses are set up correctly. We will be making the API call to get all the end dates for the course. If the end dates match the times set by BYU-I, The audit will pass. If they do not match, this audit will fail.
 # Requirements
 ### General Requirements
-<!-- What counts as pass/fail/warn? -->
-Pass: If the end date are correct for the course.
-
-Warning: 
-
-Fail: If the end dates are not correct for the course.
+- **Pass:** If the end dates are the correct date for the course.
+- **Fail:** If the end dates are incorrect (e.g. July date when it needs to be a December date).
+- **Warn:** If the date is only partially correct (e.g. December date is correct, but the year is wrong).
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
@@ -61,11 +35,10 @@ Audit Project class
 -----
 ## Expectations
 ### Timeline
-<!-- What is the deadline? 2019 Sep 1? -->
-<!-- What priority is this audit? -->
------
-The deadline is Sep 1, 2019.
+**Deadline:** 2019 Sep 1
 
-The priority is medium-low?
+**Priority:** High
+-----
+
 #### *Approved By:* 
 #### *Approval Date:*
