@@ -1,4 +1,4 @@
-# Project Capture Document for Audit: _Audit Name_ 
+# Project Capture Document for Audit: Blueprint Associations are correct 
 #### *Author: Cameron Thompson*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 15:55*
