@@ -1,4 +1,4 @@
-# Project Capture Document for Audit: _Start Date_ 
+# Project Capture Document for Audit: _Format Should Be Online_ 
 #### *Author:* Evgeniy Bekker
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 17:35*
