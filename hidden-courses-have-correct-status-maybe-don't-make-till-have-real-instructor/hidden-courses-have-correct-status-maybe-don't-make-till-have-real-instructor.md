@@ -16,7 +16,7 @@ This audit will check that a course has the right status based on if it is suppo
 <!-- What counts as pass/fail/warn? -->
 A course will pass when: *A course that is supposed to be hidden is hidden*
 
-A course will fail when: *A course that is supposed to be hidden is not hidden or a course that is not supposed to be hidden is not hidden*
+A course will fail when: *A course that is supposed to be hidden is not hidden or a course that is not supposed to be hidden is hidden*
 
 A course will warn when:
 ### Input Requirements
