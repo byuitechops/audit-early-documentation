@@ -21,6 +21,13 @@
 
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
+
+    Pass: The start date is set in the correct format and it is set correctly according to the expected semester.
+
+    Fail: The start date is not in the correct format or is not set.
+
+    Warn: The start date is not set to the expected date.
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
