@@ -6,7 +6,7 @@
 ---
 
 ## Background
-Some classes after their conversion could want to remain hidden. This means that the course is not public for academic learning, so there should be no enrollments in these courses. If there are, that could lead to problems and we would have to fix them. This audit will check for that and fail if there are enrollments in hidden courses.
+This audit will make sure that no hidden courses have enrollments. This audit will check for that and fail if there are enrollments in hidden courses.
 
 -----
 
