@@ -6,13 +6,15 @@
 ## Background
 
     This "Participation Between Dates" audit is part of a big audit project that BYUI IT department is working on.
-    The purpose of the Participation Between Dates audit is to test whether a given course has all of its enrolled students participate in between the dates that the course is offered.
+    The purpose of the Participation Between Dates audit is to test whether a given course has all of its enrolled
+    students participate in between the dates that the course is offered.
     
 -----
 
 ## Definition of Done
 
-    The audit needs to be able to successfully test whether a given course is has all of its participation being in between the dates that the course is offered in.
+    The audit needs to be able to successfully test whether a given course is has all of its participation being
+    in between the dates that the course is offered in.
 
 -----
 
@@ -55,7 +57,8 @@ Audit Project class
 ## Questions/Concerns
 
     I'm not sure if I have the right understanding of this audits purpose.
-    What constitutes participation? (Maybe submitting any assignments/files? posting/responding in discussion boards?)
+    What constitutes participation? (Maybe submitting any assignments/files? 
+        posting/responding in discussion boards?)
 -----
 
 ## Expectations
