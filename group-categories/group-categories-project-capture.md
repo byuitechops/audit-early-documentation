@@ -25,8 +25,8 @@ A failed audit can be caused by multiple different scenarios.
     
 -->
 - <span style="color:red"> Mismatched Course Failure</span>: If the course and blueprint are completley different it will throw this failure. The two cannot be compared if they are not the same.
-- <span style="color:red"> Missing Group Error</span>: If the coppied course is missing a group from the blueprint it will emit this failue.
-- <span style="color:red"> Mismached Configuration Error</span>: If the corresponding groups have grop configurations that conflict it will emit this error.
+- <span style="color:red"> Missing Group Failure</span>: If the coppied course is missing a group from the blueprint it will emit this failue.
+- <span style="color:red"> Mismached Configuration Failure</span>: If the corresponding groups have grop configurations that conflict it will emit this error.
 
 
 #### Warning:
