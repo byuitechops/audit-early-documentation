@@ -17,21 +17,17 @@ The project will be complete once it can return audit results that report if the
 
 ### General Requirements
 #### Success
-Success will be defined as having each lock configuration for the files in the copied course correspond with those in the blueprint.
-#### Predefined Failures:
+
+#### Failures:
 A failed audit can be caused by multiple different scenarios.
 <!--
-    "locked_for_user": false
-    "lock_at": "1776-07-04T06:59:56Z",
-    "unlock_at": "1770-03-05T06:59:56Z",
-    "locked": false,
+    
 -->
-- <span style="color:red"> Mismatched Course Failure</span>: If the course and blueprint are completley different it will throw this failure. The two cannot be compared if there are too many mismatched elements.
-<!-- - <span style="color:red"> Mismatched Lock/Unlock Date Failure</span>: If the module in the copied course does not have lock/unlock dates which correspond with those in the blueprint. -->
-- <span style="color:red"> Mismatched Lock Configuration Failure</span>: Each file has the settings ```locked_for_user``` and ```locked```. The former determines if a file is locked for students while the latter determines if it is locked for everbody in general. These two preferences need to correspond with the blueprint courseor it will emit an failure.
+- <span style="color:red"> Mismatched Course Failure</span>: If the course and blueprint are completley different it will throw this failure. The two cannot be compared if they are not the same.
 
-#### Predefined Warnings:
-<span style="color:yellow">Missing File Warning:</span> A warning will be issued when it finds any content which is not found in both courses. For example: Suppose there is a file that is locked in the blueprint, but that file cannot be found in the copied course. When this happens it will emit a missing file warning.
+
+#### Warnings:
+<span style="color:yellow">No Group Categories Warning:</span> If both the blueprint and the coppied course have no group categories it will emit this warning. It seems like this should be an unusual occuracne and might be an error. 
 <!-- What counts as pass/fail/warn? -->
 ### Input Requirements
 #### Source of Inputs
@@ -63,7 +59,7 @@ Audit Project class
 Total Time: Approximately 7-11 Hours or about 2-3 work-days.
 #### Day 1
 - Work on pulling and requesting all the files for courses. (≈1-2 Hours)
-- Work on comparing the lock configurations for files in the courses. (≈2-3 Hours)
+- Work on comparing the lock configurations and lock dates for files in the courses. (≈2-3 Hours)
 #### Day 2
 - Work emmiting the "Mismatched Course Failure" (≈2-3 Hours)
 - Various patches and bug fixes" (≈2-3 Hours)
