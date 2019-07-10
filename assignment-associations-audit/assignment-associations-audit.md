@@ -19,7 +19,9 @@
 # Requirements
 
 ### General Requirements
-<!-- What counts as pass/fail/warn? -->
+- **Pass:** If assignments associations match blueprint perfectly.
+- **Fail:** If assignments associations does not match blueprint.
+- **Warn:** N/A ?
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.

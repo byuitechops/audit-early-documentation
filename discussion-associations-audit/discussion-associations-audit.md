@@ -19,7 +19,9 @@
 # Requirements
 
 ### General Requirements
-<!-- What counts as pass/fail/warn? -->
+- **Pass:** If discussion associations match blueprint perfectly.
+- **Fail:** If discussion associations does not match blueprint.
+- **Warn:** N/A ?
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
