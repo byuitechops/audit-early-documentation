@@ -24,9 +24,9 @@
 
     Pass: The start date is set in the correct format and it is set correctly according to the expected semester.
 
-    Fail: The start date is not in the correct format or is not set.
+    Fail: The start date is not in the correct format, isn't set at all, or isn't the date we expect.
 
-    Warn: The start date is not set to the expected date.
+    Warn: Some of the parts of the date are set correctly but at least one of them isn't.
 
 ### Input Requirements
 #### Source of Inputs
@@ -58,6 +58,7 @@ Audit Project class
     Against what are we testing the start date? We probably don't to hard code any dates. 
     Every course has a start date in this format: "start_at": "2019-01-11T21:55:24Z".
     There is also a property "enrollment_term_id": 10. What does this number represent?
+    What should I put in the 
 -----
 
 ## Expectations
