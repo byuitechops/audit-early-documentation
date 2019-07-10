@@ -27,7 +27,7 @@ A failed audit can be caused by multiple different scenarios.
     "locked": false,
 -->
 - <span style="color:red"> Mismatched Course Failure</span>: If the course and blueprint are completley different it will throw this failure. The two cannot be compared if there are too many mismatched elements.
-<!-- - <span style="color:red"> Mismatched Lock/Unlock Date Failure</span>: If the module in the copied course does not have lock/unlock dates which correspond with those in the blueprint. -->
+- <span style="color:red"> Mismatched Lock/Unlock Date Failure</span>: If the file in the copied course is not assigned a lock/unlock date but the corresponding blueprint file does. The opposite also applies.
 - <span style="color:red"> Mismatched Lock Configuration Failure</span>: Each file has the settings ```locked_for_user``` and ```locked```. The former determines if a file is locked for students while the latter determines if it is locked for everbody in general. These two preferences need to correspond with the blueprint courseor it will emit an failure.
 
 #### Predefined Warnings:
@@ -70,6 +70,13 @@ Total Time: Approximately 7-11 Hours or about 2-3 work-days.
 
 <!-- What is the deadline? 2019 Sep 1? -->
 <!-- What priority is this audit? -->
+
+**Priority:** HIGH
+
+**Deadline:** September 1, 2019
+
+## Questions and Concerns:
+Locked files have lock and unlock dates. These dates are sure to be innactuate if we are copying them from the blueprint. Do we need to check for the accuracy of these items? If so, how could we go about doing that?
 
 -----
 
