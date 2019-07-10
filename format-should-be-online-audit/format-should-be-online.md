@@ -55,7 +55,8 @@ Audit Project class
 ## Questions/Concerns
 
     I'm not sure if I have the right idea about what this audit is supposed to check.
-    I'm not sure if I need to have anytything in the Warn section for this audit. (This audit seems pretty "black or white")
+    I'm not sure if I need to have anytything in the Warn section for this audit. 
+        (This audit seems pretty "black or white")
 -----
 
 ## Expectations
