@@ -1,18 +1,18 @@
-# Project Capture Document for Audit: _Format Should Be Online_ 
+# Project Capture Document for Audit: _SIS ID_ 
 #### *Author:* Evgeniy Bekker
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 17:35*
 
 ## Background
 
-    This "Format should be online" audit is part of a big audit project that BYUI IT department is working on.
-    The purpose of the Format should be online audit is to test whether a given course is set to be "online." 
+    This "SIS ID" audit is part of a big audit project that BYUI IT department is working on.
+    The purpose of the SIS ID audit is to test whether a given course has a correct SIS ID set. 
     
 -----
 
 ## Definition of Done
 
-    The audit needs to be able to successfully test whether a given course is set to be "online."
+    The audit needs to be able to successfully test whether a given course has a correct SIS ID set.
 
 -----
 
@@ -21,11 +21,11 @@
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
 
-    Pass: The "course_format" key of the course is set to "online."
+    Pass: The "sis_course_id" key of the course is set properly.
 
-    Fail: The "course_format" key of the course is set to anytything except "online."
+    Fail: The "sis_course_id" key of the course isn't set or is not set to what we expect.
 
-    Warn: Not sure yet
+    Warn: It's set and is partially correct.
 
 ### Input Requirements
 #### Source of Inputs
@@ -55,8 +55,7 @@ Audit Project class
 ## Questions/Concerns
 
     I'm not sure if I have the right idea about what this audit is supposed to check.
-    I'm not sure if I need to have anytything in the Warn section for this audit. 
-        (This audit seems pretty "black or white")
+        
 -----
 
 ## Expectations
