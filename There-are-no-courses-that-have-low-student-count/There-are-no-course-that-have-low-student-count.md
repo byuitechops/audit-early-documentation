@@ -14,7 +14,6 @@ We will create an audit that checks every completed course after enrollments to 
 ### General Requirements
 - **Pass:** If the course has 10 or more students (or has the exact number of students expected)
 - **Fail:** If the course has less than 10 students (or has anything other than the exact number of students expected)
-- **Warn:** If the number of TAs is greater than 1.
 - **Warn:** If the number of teachers is greater than 1.
 - **Warn:** If there are no teachers.
 ### Input Requirements
