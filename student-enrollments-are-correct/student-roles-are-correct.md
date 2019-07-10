@@ -1,26 +1,26 @@
-# Project Capture Document for Audit: Hidden Courses Don't Have Enrollments
+# Project Capture Document for Audit: Student Roles Are Correct
 #### *Author: Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 4:46*
-
----
-
 ## Background
-This audit will make sure that no hidden courses have enrollments. This audit will check for that and fail if there are enrollments in hidden courses.
+
+Some classes after their conversion could have a problem with not having student roles correct. This could be an issue because students need to have the right roles and if that's not the case we would have problems. We need to avoid this issue. This audit will get the api call to get student roles for all given course codes and will ensure that students are enrolled with the right role. 
 
 -----
 
 ## Definition of Done
 
-We are creating an audit that will pass only if hidden courses have no enrollments. We will do this by making the api call to get enrollments and determining whether a course is hidden, then making sure that there are no enrollments.
-# Requirements
+We are creating this audit so we can check whether students have the right role in given courses. We will be making the API call to get the students and their roles, then making sure that the roles are correct. If there is a student with an incorrect role, it will fail.
+
+-----
+
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
-Pass: If a course is hidden and has no enrollments.
+Pass: Students have the student role
 
-Warning: If a course is not hidden and has no enrollments
+Warning:
 
-Fail: If a hidden course has enrollments.
+Fail: If a student doesn't have student roll.
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
@@ -46,6 +46,7 @@ Audit Project class
 <!-- What priority is this audit? -->
 -----
 The deadline is Sep 1, 2019.
-The priority is medium-low?
+
+The priority is high?
 #### *Approved By:* 
 #### *Approval Date:*
