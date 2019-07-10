@@ -1,4 +1,4 @@
-# Project Capture Document for Audit: _Audit Name_ 
+# Project Capture Document for Audit: Locked Modules 
 #### *Author:* Eric Julander
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 12:41*
@@ -23,11 +23,11 @@ A failed audit can be caused by multiple different scenarios.
 
 - <span style="color:red"> Mismatched Course Failure</span>: If the course and blueprint are completley different it will throw this failure. The two cannot be compared if there are too many mismatched elements.
 - <span style="color:red"> Mismatched Prerequisite Failure</span>: If the modules prerequisites do not match those of the course blue-print it will throw this failure.
-- <span style="color:red"> Mismatched Unlock Date Failure</span>: If the modules unlock date do not match those of the course blue-print it will throw this failure.
+- <span style="color:red"> Mismatched Unlock Date Failure</span>: - <span style="color:red"> Mismatched Lock/Unlock Date Failure</span>: If the module in the copied course is not assigned a lock/unlock date but the corresponding blueprint module does. The opposite also applies.
 
 #### Warnings:
 - <span style="color:yellow">Missing Module Warning:</span> A warning will be issued when it finds any content which is not found in both courses. For example: Suppose there is a module that is locked in the blueprint, but that module cannot be found in the copied course. When this happens it will emit a missing module warning.
-- <span style="color:yellow"> Invalid Unlock Date Warning</span>: If the modules unlock date has already occured it will throw this warning.
+<!-- - <span style="color:yellow"> Invalid Unlock Date Warning</span>: If the modules unlock date has already occured it will throw this warning. -->
 <!-- What counts as pass/fail/warn? -->
 ### Input Requirements
 #### Source of Inputs
@@ -56,22 +56,28 @@ Audit Project class
 
 ## Expectations
 ### Timeline
-Total Time: Approximately 8-15 Hours or about 2 - 3 work-days.
+Total Time: Approximately 6-11 Hours or about 2 - 3 work-days.
 #### Day 1
 - Work on pulling and requesting all the modules for courses. (≈1-2 Hours)
 - Work on comparing the prerequisites for modules in the courses (≈1-2 Hours)
 #### Day 2
-- Work on comparing the unlock-dates for modules in the courses (≈1-2 Hours)
-- Work on checking that the unlock-dates for modules have not already past. (≈1-2 Hours)
+<!-- - Work on comparing the unlock-dates for modules in the courses (≈1-2 Hours) -->
+<!-- - Work on checking that the unlock-dates for modules have not already past. (≈1-2 Hours) -->
 - Work on emmiting the "Mismatched Lock Configuration Failure" (≈1-2 Hours)
 #### Day 3
 - Work on emmiting the "Missing Module Warning" (≈1-2 Hour)
 - Work emmiting the "Mismatched Course Failure" (≈1 Hour)
 - Various patches and bug fixes" (≈1-2 Hours)
 
+**Priority:** HIGH
 
+**Deadline:** September 1, 2019
 <!-- What is the deadline? 2019 Sep 1? -->
 <!-- What priority is this audit? -->
+
+
+## Questions and Concerns:
+Locked files have lock and unlock dates. These dates are sure to be innactuate if we are copying them from the blueprint. Do we need to check for the accuracy of these items? If so, how could we go about doing that?
 
 -----
 
