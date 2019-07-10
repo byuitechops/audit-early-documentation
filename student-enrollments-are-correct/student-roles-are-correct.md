@@ -1,16 +1,16 @@
-# Project Capture Document for Audit: Student Enrollments Are Correct
+# Project Capture Document for Audit: Student Roles Are Correct
 #### *Author: Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 4:46*
 ## Background
 
-Some classes after their conversion could have a problem with not having any students enrolled. This could be an issue because students need to have the right roles and if that's not the case we would have problems. We need to avoid this issue. This audit will get the api call to get student enrollments for all given course codes and will ensure that students are enrolled with the right role. 
+Some classes after their conversion could have a problem with not having student roles correct. This could be an issue because students need to have the right roles and if that's not the case we would have problems. We need to avoid this issue. This audit will get the api call to get student roles for all given course codes and will ensure that students are enrolled with the right role. 
 
 -----
 
 ## Definition of Done
 
-We are creating this audit so we can check whether students have the right role in given courses. We will be making the API call to get the students and their roles, then making sure that the roles are correct. If there is a student with an incorrect role, it will fail. We will also warn of suspicious behaivor (see below.)
+We are creating this audit so we can check whether students have the right role in given courses. We will be making the API call to get the students and their roles, then making sure that the roles are correct. If there is a student with an incorrect role, it will fail.
 
 -----
 
@@ -18,7 +18,7 @@ We are creating this audit so we can check whether students have the right role 
 <!-- What counts as pass/fail/warn? -->
 Pass: Students have the student role
 
-Warning: If there are no teacher roles, if there are all students, if there are not students enrolled
+Warning:
 
 Fail: If a student doesn't have student roll.
 ### Input Requirements
