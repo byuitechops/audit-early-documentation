@@ -20,7 +20,7 @@ The project will be complete once it can return audit results that report if the
 Success will be defined as having each lock status for the files in the copied course to match those in the blueprint.
 #### Predefined Failures:
 A failed audit can be caused by multiple different scenarios.
-- <span style="color:red"> Http Connection Error</span>: This will be emited when the audit script fails to connect to the internet, find the courses with the specified codes, is missing authentication, or any other network issues like this. 
+
 - <span style="color:red"> Mismatched Course Error</span>: If the course and blueprint are completley different it will throw this error. The two cannot be compared if there are too many mismatched elements.
 - <span style="color:red"> Mismatched Lock Configuration Error</span>: If the copied course has a lock configuration which differs from the blueprint, it will emit this error for the course.
 
