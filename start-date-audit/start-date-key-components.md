@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![Start Date Audit Key Components](/images/magic-box.jpg)
+![Start Date Audit Key Components](images/magic-box.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
