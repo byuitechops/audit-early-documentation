@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![alt text](../images/blueprointTurnedOn.png)
+![alt text](images/blueprintTurnedOn.png)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
