@@ -13,7 +13,7 @@ We are creating this audit so we can check whether the end dates for courses are
 ### General Requirements
 - **Pass:** If the end dates are the correct date for the course.
 - **Fail:** If the end dates are incorrect (e.g. July date when it needs to be a December date).
-- **Warn:** If the date is only partially correct (e.g. December date is correct, but the year is wrong).
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
