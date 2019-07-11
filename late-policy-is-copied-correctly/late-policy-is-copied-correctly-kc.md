@@ -1,6 +1,6 @@
-# Key Components Doc for <Project>
-#### *Author: Your_Name_Here*
-#### *Date: Todays Date*
+# Key Components Doc for Audit: Late Policy Is Copied Correctly
+#### *Author: John Reiley*
+#### *Date: July 7, 2019*
 
 # Preliminary Design
 
