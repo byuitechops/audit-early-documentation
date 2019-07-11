@@ -1,12 +1,12 @@
-# Key Components Doc for <Start Date Audit>
+# Key Components Doc for Start Date Audit
 #### *Author: Evgeniy Bekker*
-#### *Date: Todays Date*
+#### *Date: July 11th 2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![Start Date Audit Key Components](/images/magic-box.jpg)
+![Start Date Audit Key Components](images/magic-box.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
