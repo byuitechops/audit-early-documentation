@@ -19,7 +19,9 @@
 # Requirements
 
 ### General Requirements
-<!-- What counts as pass/fail/warn? -->
+- **Pass:** If groups match blueprint.
+- **Fail:** If groups do not match blueprint.
+- **Warn:** N/A ?
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
