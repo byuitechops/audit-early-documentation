@@ -1,23 +1,31 @@
-# Key Components Doc for Audit: New Gradebook
+# Key Components Doc for Audit: Late Policy Is Copied Correctly
 #### *Author: John Reiley*
-#### *Date: July 10, 2019*
+#### *Date: July 7, 2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](new-gradebook-mbc.jpg)
+![alt text](late-policy-is-copied-correctly.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-The audit will make an API call to the following endpoint: `/courses/:course_id/features/enabled`  
-The returned string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will pass, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the audit will fail.
+
+An API call will be made to the endpoint `/course/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
+
+`[ { "blueprint_course": { "id": 35764 } } ]`
+
+The id member value will then be extracted. The following API calls will then be made with the course id and course blueprint id:  
+1. `/course/:course_id/features/enabled`  
+2. `/course/:course_id/late_policy`
+
+The first API call, which returns an array of enabled features, will be used to determine whether or not the "new gradebook" feature is enabled. If not, there is a possibilty that the late policy does not exist.   
+
+If so, the second API call will get the late policy for the course and its blueprint which will then be compared.            
 
 ### Used Libraries
 - HttpClient
-
-
 
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]

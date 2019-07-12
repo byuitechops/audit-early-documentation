@@ -58,7 +58,15 @@ Audit Project class
     Against what are we testing the start date? We probably don't to hard code any dates. 
     Every course has a start date in this format: "start_at": "2019-01-11T21:55:24Z".
     There is also a property "enrollment_term_id": 10. What does this number represent?
-    What should I put in the 
+    What should I put in the warn section.
+
+    Some additional info:
+        The API call will be to https://byui.instructure.com//api/v1/courses/course_id
+        which will return a course JSON string(which we can turn into a course object) and 
+        then use the "start_at" to test it. 
+
+        as said above, I'm not sure against what data do I need to test that key. 
+        I believe Aaron is going to talk with Dan Gordon about that(or maybe he already knows).
 -----
 
 ## Expectations

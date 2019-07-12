@@ -1,52 +1,93 @@
-# Project Capture Document for Audit: Blueprint Associations are correct 
+# Key Components Doc for Blueprint Association are Correct
 #### *Author: Cameron Thompson*
-#### *Stakeholder(s): Dan Gordon*
-#### *Date: 2019 July 8, 15:55*
-## Background
+#### *Date: 7/12/2019*
 
-Durring course copy, courses could have their blueprint associations disorganized from what they are supposed to be. This causes a great deal of headache to fix the blueprint associations, taking time and money from the University and its employees. 
+# Preliminary Design
 
------
-## Definition of Done
+## Magic Box Chart
 
-This audit will check the courses to make sure that the correct courses that are dirived from a blueprint are children of the correct blueprint. If not then the audit will flag the course to be connected to the correct blueprint course. Additionaly, if a course is connected to a parent blueprint, then the audit will check to make sure it is the correct parent course for the child course. For example, if FDMATH 108 is a child course, the audit will check to see if the parent course is the semester blueprint of FDMATH 108.
+![alt text](images/blueprint-association.png)
 
------
-# Requirements
-### General Requirements
-<!-- What counts as pass/fail/warn? -->
-A course will pass when: The child courses match the correct parent blueprint course
+<!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
-A course will fail when: When a child course is not connected to a parent blueprint or the course is matched with the incorrect blueprint parent course.
+## Explanation of Design
+For each of the course ID's, the program will call the blueprint subscription API and get the blueprint subscription for the course. Then it will check the name of the blueprint subscription and will check the name of the current course. If they are the same then we know the association is set up. 
 
-A course will warn when: When a semster blueprint doesn't have children (No sections created for the course)
-### Input Requirements
-#### Source of Inputs
-All inputs will be received via the encompassing Audit Project.
-#### Definition of Inputs
-<!-- TBD: do not fill out just yet -->
-- Course Id(s) to run this audit on.
----
-### Output Requirements
-#### Destination
-Returned to the invoked method from the Audit Project.
-#### Definition of Outputs
-<!-- TBD: do not fill out just yet -->
-- Results of the Pass/Fail/Warn status of this audit and associated messages.
----
-### User Interface
-An extension of the base Audit class from `namespace Byui.CourseAudits.Business.Model.Audits`.
-#### Type:
-Audit Project class
+### Used Libraries
+Canvas API Wrapper
+
+## Things to Consider Before Getting Project Approved
+- Are there any approved libraries that I can use? [Link to Approved Library List]
+- Are there design patterns that will help?  [Link to Design Patterns]
+- Can I design it so that it is a general tool instead of a specific solution?
+- How can it be easily expanded?
+- What does the minimum viable product look like?
+
+## Prep for Learning Phase
+- What do I need to learn
+- How will I learn it
+- What will I do to learn it (prototypes/tutorials/research time limit?)
+- What is the definition of done for my learning process
+- How do I measure the progress of learning
+- Is there a deliverable that can be created during the learning process?
 
 -----
-## Expectations
-### Timeline
-<!-- What is the deadline? 2019 Sep 1? -->
-2019 Sep 1
-<!-- What priority is this audit? -->
-Med
+
+#### *Preliminary Design Approved By:* 
+#### *Preliminary Design Approval Date:*
+
+# Full Design
+
+## Component Diagrams
+<!-- Diagrams and companion explanations for all Key Components.
+These would include information about inputs, outputs, and what a function does for every major function. -->
+
+<!-- For each component, the following template will be followed: (In other words, the template below will repeat for each component)-->
+
+### *Insert Component name here*
+
+Diagram:
+
+*Insert Diagram Here*
+
+Explanation:
+
+*Insert Explanation here*
+
+<!-- For a future release:
+## Test Plans
+For each major function the test plan template will be as follows (in other words the template below will repeat for each test) 
+### *Insert name of component here (e.g. convertIdToCourseObject function)*
+#### Test 1: *Insert Test name here*
+Summary: 
+ *Insert Test Summary Here*
+ Type: *Insert Type here (Unit Test, Manual Test, Selenium/Puppeteer test (Overkill?))* 
+Procedure:
+1. *Insert Steps here*
+1. *and here*
+1. *and here*
+Expected Outcome:
+*Insert Expected Outcome here*
+-->
+
+## Test Plans
+
+### *Insert Module Name Here*
+#### How to Test:
+
+
+
+
 
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+
+#### *Full Design Approved By:* 
+#### *Full Design Approval Date:*
+
+
+<!-- Diagram Types:
+ - Data Flow (I think this will be the most popular)
+ - Structure Charts (This is really good for showing input and output of every function)
+ - UML Class Diagram (a must for object oriented projects) -->
+
+
