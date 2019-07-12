@@ -11,8 +11,8 @@
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-The audit will make an API call to the following link: `https://byui.instructure.com/api/v1/courses/:course_id/features/enabled`  
-The string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will pass, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the audit will fail.
+The audit will make an API call to the following endpoint: `/courses/:course_id/features/enabled`  
+The returned string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will pass, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the audit will fail.
 
 ### Used Libraries
 - HttpClient

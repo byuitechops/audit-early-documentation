@@ -25,6 +25,7 @@ The first API call, which returns an array of enabled features, will be used to 
 If so, the second API call will get the late policy for the course and its blueprint which will then be compared.            
 
 ### Used Libraries
+- HttpClient
 
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
