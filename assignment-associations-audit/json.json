@@ -1,0 +1,64 @@
+[{
+    "id": 1921967,
+    "description": "\u003cp\u003eDo That Important Thinggy Now!\u003c/p\u003e",
+
+    "due_at": null,
+    "unlock_at": null,
+    "lock_at": null,
+
+    "points_possible": 100000000000.0,
+    "grading_type": "pass_fail",
+
+    "assignment_group_id": 259891,
+    "grading_standard_id": null,
+
+    "peer_reviews": false,
+    "automatic_peer_reviews": false,
+
+    "position": 1,
+    "grade_group_students_individually": false,
+    "anonymous_peer_reviews": false,
+    "group_category_id": null,
+
+    "post_to_sis": false,
+    "moderated_grading": false,
+    "omit_from_final_grade": false,
+
+    "intra_group_peer_reviews": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "graders_anonymous_to_graders": false,
+    "grader_count": 0,
+    "grader_comments_visible_to_graders": true,
+    "final_grader_id": null,
+    "grader_names_visible_to_final_grader": true,
+
+    "allowed_attempts": -1,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjI1M2UyMGM3LWU4YTktNDNiZi04N2JjLWMzZDUwYjAwMDIxMSJ9.Levs0qR04jtNAY0Vms4MtRBneKqPo-cZl1LxoXruFt0",
+
+    "name": "Super Important Mandatory Thing",
+
+    "submission_types": ["online_upload"],
+
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "in_closed_grading_period": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_assignment_name": null,
+    "workflow_state": "published",
+    "muted": false,
+    "html_url": "https://byui.instructure.com/courses/59796/assignments/1921967",
+    "has_overrides": false,
+    "needs_grading_count": 0,
+    "integration_id": null,
+    "integration_data": {},
+    "published": true,
+    "unpublishable": true,
+    "only_visible_to_overrides": false,
+    "locked_for_user": false,
+    
+    "anonymize_students": false
+}] 

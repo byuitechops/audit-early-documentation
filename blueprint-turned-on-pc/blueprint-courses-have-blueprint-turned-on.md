@@ -1,17 +1,23 @@
-# Key Components Doc for Blueprint Association are Correct
+# Key Components Doc for Blueprint Courses have Blueprint turned on
 #### *Author: Cameron Thompson*
-#### *Date: 7/12/2019*
+#### *Date: 07/11/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](images/blueprint-association.png)
+![alt text](images/blueprintTurnedOn.png)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-For each of the course ID's, the program will call the blueprint subscription API and get the blueprint subscription for the course. Then it will check the name of the blueprint subscription and will check the name of the current course. If they are the same then we know the association is set up. 
+<!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
+
+This audit will take in a list of course ID's. Using the Canvas API Wrapper, I will loop through the list of course ID's and use the returned course object to do the following:
+
+- If a course has the blueprint setting turned on but it doesn't have the word blueprint in its name then it will warn.
+- If a course has the blueprint setting turned on then it will pass.
+- If a course has blueprint in its name but doesn't have the blueprint setting on then it will fail.
 
 ### Used Libraries
 Canvas API Wrapper

@@ -12,7 +12,8 @@
 
 ## Definition of Done
 
-    The audit needs to be able to successfully test whether a given course has a correct SIS ID set.
+    The audit needs to be able to successfully test whether a given course has a correct SIS ID set
+    and that the SIS ID is in the correct format.
 
 -----
 
@@ -21,9 +22,13 @@
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
 
-    Pass: The "sis_course_id" key of the course is set properly.
+    Pass: The "sis_course_id" key of the course is set properly and is in the correct format. 
+    SIS ID has a specific format:
+        "campus/online.YEAR.Semester.ClassCode.duration.instructor_email" 
+        ex. "Campus.2019.Fall.FAML 120.Block1.denniss@byui.edu"
 
-    Fail: The "sis_course_id" key of the course isn't set or is not set to what we expect.
+    Fail: The "sis_course_id" key of the course isn't set, isn't set to what we expect,
+        or isn't in the correct format.
 
     Warn: It's set and is partially correct.
 
@@ -55,6 +60,14 @@ Audit Project class
 ## Questions/Concerns
 
     I'm not sure if I have the right idea about what this audit is supposed to check.
+
+    Some additional info:
+        The API call will be to https://byui.instructure.com//api/v1/courses/course_id
+        which will return a course JSON string(which we can turn into a course object) and 
+        then use the "sis_course_id" to test it. 
+
+        I'm not sure against what data do I need to test that key. 
+        I believe Aaron is going to talk with Dan Gordon about that(or maybe he already knows).
         
 -----
 

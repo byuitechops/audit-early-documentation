@@ -1,17 +1,18 @@
-# Key Components Doc for Blueprint Association are Correct
+# Key Components Doc for Hidden Course Hace Correct Status
 #### *Author: Cameron Thompson*
-#### *Date: 7/12/2019*
+#### *Date: 07/15/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](images/blueprint-association.png)
+![alt text](images/hiddenCoursesHaveCorrectVisability.png)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-For each of the course ID's, the program will call the blueprint subscription API and get the blueprint subscription for the course. Then it will check the name of the blueprint subscription and will check the name of the current course. If they are the same then we know the association is set up. 
+The audit will get a list of course ID's. The aduit will loop through each of the course ID's and will get the course object. Then the audit will check the "is_public" property to check if a course is public or not. If it is then the course will fail the audit. 
+
 
 ### Used Libraries
 Canvas API Wrapper

@@ -3,18 +3,18 @@
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 18:25*
 ## Background
-It is important for courses to be in the right locations when students are looking for them. It would be bad if a student was enrolling for their classes and wasn't able to find the classes they needed to take. This audit will make sure that the courses are in the right place (e.g. CS124, CS165 and other CS classes are sub accounts to the main Computer Science Department).
+It is important for courses to be organized in the right Subaccount. Not having the courses organized correctly could cause problems in the school's system. This audit will make sure that the courses are organized under the correct sub accounts.
 
 -----
 ## Definition of Done
-This audit will go through the courses and make sure that their sub accounts are in the right places.
+This audit will go through the courses and make sure that they are organized under the correct subaccounts.
 
 -----
 # Requirements
 ### General Requirements
 - **Pass:** Courses are in the right place (they have the correct sub account).
 - **Fail:** Courses are not in the right place (they don't have the correct sub accout).
-- **Warn:** Courses might have multiple sub accounts(?).
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
@@ -30,8 +30,7 @@ Returned to the invoked method from the Audit Project.
 - Results of the Pass/Fail/Warn status of this audit and associated messages.
 ---
 ### Questions/Concerns
-- Honestly, I don't even know if this is correct. 
-- https://community.canvaslms.com/docs/DOC-10770-421455343 went to this link to find out more about sub accounts.
+
 ---
 ### User Interface
 An extension of the base Audit class from `namespace Byui.CourseAudits.Business.Model.Audits`.
