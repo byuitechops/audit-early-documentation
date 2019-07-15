@@ -1,27 +1,32 @@
-# Project Capture Document for Audit:Discussion_Associations_Audit 
-#### *Author:* Lucas Wargha
+# Project Capture Document for Audit: Discussion Associations 
+#### *Author:* Lucas Wargha (updated by John Reiley)
 #### *Stakeholder(s): Dan Gordon*
-#### *Date: 2019 July 9, 10:03*
+#### *Date: 2019 July 15*
 
 ## Background
 
-    The "Discussion Associations" audit is part of a big audit project that BYUI IT department is working on. 
-    The purpose of this audit is to assure that all discussions were set up properly in a given course/set of courses. The test should also involve the accuracy of configurations agains the blueprint of a given course. (Ex: Allow threads, etc) 
+Incorrectly copied discussion associations can result in a mess if not caught early enough, creating confusion for discussions.
 
 -----
 
 ## Definition of Done
 
-   This test has the objective of testing discussion boards throughout canvas courses. This test should go over different configurations for each discussion board. 
+   The audit will test if there is correct association between the course's group categories and discussion topics by comparing the BP (blueprint) against the CC (copied course).
 
 -----
 
 # Requirements
 
 ### General Requirements
-- **Pass:** If discussion associations match blueprint perfectly.
-- **Fail:** If discussion associations does not match blueprint.
-- **Warn:** N/A ?
+**Pass:** 
+- Both BP and CC have null values for the `group_category_id` member of the **`discussion_topic`** object.  
+- Both BP and CC have values for the `group_category_id` AND same values for `name`, `role`, `self_signup`, `auto_leader`, and `group_limit` members of the **`group_category`** object.  
+
+**Fail:**
+- Only BP or CC have a null value for the `group_category_id` OR unmatching values for `name`, `role`, `self_signup`, `auto_leader`, and `group_limit` members of the **`group_category`** object.
+
+**Warn:** N/A ?
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
@@ -48,8 +53,7 @@ Audit Project class
 -----
 
 ## Questions/Concerns
-
-  Are we testing the discussion boards against the course blueprint? Which elements of each discussion's configuration should be checked? (Ex: threaded discussion, visualization pre/post initial reply, etc).
+- None
 -----
 
 ## Expectations
@@ -57,7 +61,7 @@ Audit Project class
 <!-- What is the deadline? 2019 Sep 1? -->
 <!-- What priority is this audit? -->
 
-    Currently the plan is to finish this audit by September 1st 2019
+Currently the plan is to finish this audit by September 1st 2019
 -----
 
 #### *Approved By:* 
