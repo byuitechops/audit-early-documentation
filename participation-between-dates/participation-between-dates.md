@@ -1,20 +1,18 @@
 # Project Capture Document for Audit: _Participation Between Dates_ 
-#### *Author:* Evgeniy Bekker
+#### *Author: Evgeniy Bekker & Seth Bolander*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 17:55*
 
 ## Background
 
-    This "Participation Between Dates" audit is part of a big audit project that BYUI IT department is working on.
-    The purpose of the Participation Between Dates audit is to test whether a given course has all of its enrolled
-    students participate in between the dates that the course is offered.
+This "Participation Between Dates" audit is part of a big audit project that BYUI IT department is working on.
+The purpose of the Participation Between Dates audit is to test whether a given course has restricted enrollments to course dates.
     
 -----
 
 ## Definition of Done
 
-    The audit needs to be able to successfully test whether a given course is has all of its participation being
-    in between the dates that the course is offered in.
+The audit needs to be able to successfully test whether a given course restricts enrollments and participation to course dates.
 
 -----
 
@@ -23,11 +21,11 @@
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
 
-    Pass: All of the course's participation occured in between the dates that the course was offered in.
+Pass: `restrict_enrollments_to_course_dates` is `true` or `1`.
 
-    Fail: There was at least one participation outside of the range of dates in which the course was offered.
+Fail: `restrict_enrollments_to_course_dates` is `false` or `0`.
 
-    Warn: Not sure yet
+Warn: Not sure yet
 
 ### Input Requirements
 #### Source of Inputs
@@ -56,9 +54,7 @@ Audit Project class
 
 ## Questions/Concerns
 
-    I'm not sure if I have the right understanding of this audits purpose.
-    What constitutes participation? (Maybe submitting any assignments/files? 
-        posting/responding in discussion boards?)
+Is the only key we should be looking at `restrict_enrollments_to_course_dates` or are there other keys that we need to test for participation?
 -----
 
 ## Expectations
