@@ -1,27 +1,32 @@
-# Project Capture Document for Audit: Assignment_Associations_Audit 
-#### *Author:* Lucas Wargha
+# Project Capture Document for Audit: AssignmentAssociations 
+#### *Author:* Lucas Wargha (updated by John Reiley)
 #### *Stakeholder(s): Dan Gordon*
-#### *Date: 2019 July 9, 10:03*
+#### *Date: 2019 July 15*
 
 ## Background
 
-    The "Assignment Associations" audit is part of a big audit project that BYUI IT department is working on. 
-    The purpose of this audit is to assure that all assignments were set up properly in a given course/set of courses. The test should also involve the accuracy of configurations agains the blueprint of a given course. (Ex: Time Limit, etc) 
+Incorrectly copied assignment associations can result in a mess if not caught early enough, creating confusion for group assignments. 
 
 -----
 
 ## Definition of Done
 
-   This test has the objective of testing assignmentS throughout canvas courses. This test should go over different configurations for each assignment. 
+   The audit will test if there is correct association between the course's group categories and assignments by comparing the BP (blueprint) against the CC (copied course).
 
 -----
 
 # Requirements
 
 ### General Requirements
-- **Pass:** If assignments associations match blueprint perfectly.
-- **Fail:** If assignments associations does not match blueprint.
-- **Warn:** N/A ?
+**Pass:** 
+- Both BP and CC have null values for the `group_category_id` member of the **`assignment`** object.  
+- Both BP and CC have values for the `group_category_id` AND same values for `name`, `role`, `self_signup`, `auto_leader`, and `group_limit` members of the **`group_category`** object.  
+
+**Fail:**
+- Only BP or CC have a null value for the `group_category_id` OR unmatching values for `name`, `role`, `self_signup`, `auto_leader`, and `group_limit` members of the **`group_category`** object.  
+
+**Warn:** N/A ?
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
