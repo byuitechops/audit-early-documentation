@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![End Date Audit Key Components](images/magic-box.jpg)
+![Audit Key Components](images/magic-box.jpg)
 
 ## Explanation of Design
 This audit will test the description of a given course. The audit is passed a List of strings called CourseCodes. For each of the course codes in the list, the audit does an HTTP Request in order to get the JSON for the Course usin the endpoint: `/courses/:course_id/settings`. Using the JSON, it will take the value that the course has for description: `/public_description`. If the description for the course is there, then the audit passes. If the description is not there, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
