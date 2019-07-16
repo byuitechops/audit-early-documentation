@@ -49,7 +49,17 @@ Audit Project class
 
 ## Questions/Concerns
 
-    Against what are we testing the groups? What properties should we be checking when checking groups and what defines a warn/pass/error in this audit?
+    Against what are we testing the groups? What properties should we be checking when checking groups and what defines a warn/pass/error in this audit? 
+    -Properties that would be evalulated in this audit.
+    1)name
+    2)max_membership
+    3)join_level
+    4)is_public
+    5)description
+    6)member_count
+    7)context type ?
+    8)leader == NULL
+    9)concluded == false
 -----
 
 ## Expectations
