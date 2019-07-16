@@ -1,6 +1,6 @@
 # Key Components Doc for <Project>
-#### *Author: Your_Name_Here*
-#### *Date: Todays Date*
+#### *Author: Jake Schwantes*
+#### *Date: 16 July 2019*
 
 # Preliminary Design
 
