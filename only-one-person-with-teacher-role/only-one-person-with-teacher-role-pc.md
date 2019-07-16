@@ -48,6 +48,6 @@ Audit Project class
 <!-- What priority is this audit? -->
 -----
 The deadline is Sep 1, 2019.
-The priority is high?
-#### *Approved By:* 
-#### *Approval Date:*
+The priority is high
+#### *Approved By:* Aaron Shiffler
+#### *Approval Date:* 16 July 2019
