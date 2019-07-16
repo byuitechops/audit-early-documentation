@@ -3,11 +3,12 @@
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 4:46*
 ## Background
-Some classes after their conversion could have a problem with not having any teachers enrolled or having multiple teachers enrolled. This could be a problem because most courses should have only one teacher and having two or none could be harmful to the class. We want to avoid this issue. This audit will get a list of teachers for the given course codes and will ensure that only one teacher exists.
+
+Classes could have a problem with not having any teachers enrolled or having multiple teachers enrolled. We want to avoid this issue, especially because having the teacher role assigned correctly is high priority before the semesters start. This audit will get a list of teachers for the given course codes and will ensure that only one teacher role exists. (This is not the same audit as making sure the teachers have the correct enrollments).
 
 -----
 ## Definition of Done
-We are creating this audit so we can check whether teachers are enrolled in given courses. We will be making the API call to get all the teachers in the given course. If there are teachers, we will make sure there is only one. If there are none or there are more than one, this audit will fail.
+We are creating this audit so we can check whether the correct number of teachers are enrolled in given courses (one teacher only). We will be making the `/api/v1/courses/:course_id/users?enrollment_type[]=teacher` call to get all the users with the teacher role in the given course. If there are teachers, we will make sure there is only one. If there are none or there are more than one, this audit will fail.
 
 -----
 
@@ -18,7 +19,7 @@ Pass: If there is only one user with teacher role.
 
 Warning:
 
-Fail: If there are no teachers or there are multiple teachers. The message will populate with how many teachers there were. And with the expected teacher, if that information is available.
+Fail: If there are no teachers or there are multiple teachers. The message will populate with how many teachers there were.
 
 ### Input Requirements
 #### Source of Inputs
