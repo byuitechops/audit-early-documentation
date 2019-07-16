@@ -10,7 +10,7 @@
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-This Audit will take an enrollments api call from canvas to get a list of users and their enrollments. We will use this information to find the amount of teachers listed in the course. There will be conditional logic that will pass the audit if the number of teachers is equal to one. A corresponding message will be returned. Likewise if the audit fails.
+This Audit will make the `/api/v1/courses/:course_id/users?enrollment_type[]=teacher` call from canvas to get a list of Teachers. We will count this to find the number of teachers in the course. There will be conditional logic that will pass the audit only if the number of teachers is equal to one. Else, the audit will fail. A corresponding message will be returned.
 
 ### Used Libraries
 - The canvas wrapper (Comming soon).
