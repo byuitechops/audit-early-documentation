@@ -43,17 +43,41 @@ Canvas API Wrapper
 These would include information about inputs, outputs, and what a function does for every major function. -->
 
 <!-- For each component, the following template will be followed: (In other words, the template below will repeat for each component)-->
+### INPUTS: 
+#Group JSON object:
+This holds the same structure as the Canvas Group Categories Object.
+https://canvas.instructure.com/doc/api/groups.html
 
-### *Insert Component name here*
+#Data IN => 
+- *Status* - Contains a value describing the success of the operation ( 0 = pass, 1 = warning, 2 = failure)
+- *Message* - The message accompanying the status of the operation.
+- *ListCourseIds* - Contains the list of the course ID's to be audited
+- *BluePrintID* - A string (int number) containing the id of the course that the audit will use as to build the compare object.
 
-Diagram:
+#Data OUT =>
+- *List<AuditMessage> - A list of the audit messages generated in each audit. This list will be nested, because each course has several groups. So most likely, it won't be only one per course being audited.
+### METHODS
+### *GetJson*
+##### Parameters: 
 
-*Insert Diagram Here*
+- *BlueprintCourseID*: The ID for the blueprint course.
+- *CopiedCourseID* : ID for the copied course ID.
 
-Explanation:
+##### Outputs:
+List with two POCO objects. 
+- *BlueprintCourse*: Object of the groups in the blueprint course.
+- *CopiedCourse* : Object containing the groups for the copy course.
 
-*Insert Explanation here*
+### *BuildPocoObjs*
+##### Parameters: 
 
+- *BlueprintCourseStg*: The ID for the blueprint course.
+- *CopiedCourseStg* : ID for the copied course ID.
+
+##### Outputs:
+List with two POCO objects. 
+- *BlueprintCourse*: Object of the groups in the blueprint course.
+- *CopiedCourse* : Object containing the groups for the copy course.
 <!-- For a future release:
 ## Test Plans
 For each major function the test plan template will be as follows (in other words the template below will repeat for each test) 
