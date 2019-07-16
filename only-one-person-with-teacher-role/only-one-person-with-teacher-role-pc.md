@@ -17,9 +17,11 @@ We are creating this audit so we can check whether the correct number of teacher
 <!-- What counts as pass/fail/warn? -->
 - Pass: If there is only one user with teacher role.
 
-- Fail: If there are no teachers or there are multiple teachers. 
+- Fail: If there are no teachers
 
-- Fail: The message will populate with how many teachers there were.
+- Fail: If there are multiple teachers
+
+The message will populate with how many teachers there were.
 
 ### Input Requirements
 #### Source of Inputs
