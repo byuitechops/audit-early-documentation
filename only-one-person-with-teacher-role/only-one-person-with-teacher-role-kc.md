@@ -15,13 +15,13 @@ This Audit will make the `/api/v1/courses/:course_id/users?enrollment_type[]=tea
 ### Used Libraries
 - The canvas wrapper (Comming soon).
 
+<!--
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -29,11 +29,12 @@ This Audit will make the `/api/v1/courses/:course_id/users?enrollment_type[]=tea
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
+-->
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By:* Aaron Shiffler
+#### *Preliminary Design Approval Date:* 16 July 2019
 
 # Full Design
 
