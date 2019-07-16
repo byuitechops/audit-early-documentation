@@ -15,11 +15,11 @@ We are creating this audit so we can check whether the correct number of teacher
 # Requirements
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
-Pass: If there is only one user with teacher role.
+- Pass: If there is only one user with teacher role.
 
-Warning:
+- Fail: If there are no teachers or there are multiple teachers. 
 
-Fail: If there are no teachers or there are multiple teachers. The message will populate with how many teachers there were.
+- Fail: The message will populate with how many teachers there were.
 
 ### Input Requirements
 #### Source of Inputs
