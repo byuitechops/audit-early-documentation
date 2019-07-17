@@ -1,5 +1,5 @@
 # Key Components Doc for There are no courses that have low student count 
-#### *Author: Cameron Thompson*
+#### *Author: Cameron Thompson, Jacob Schwantes*
 #### *Date: 7/15/2019*
 
 # Preliminary Design
@@ -12,18 +12,16 @@
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-This audit takes a list of course ID's. Then for each course ID the audit will pull the student count, and if the count is less than 10, then the course will fail the audit. 
-
+This audit takes a list of course ID's. Then for each course ID the audit will call `/api/v1/courses/:course_id/users?enrollment_type[]=student` to get a list of students. There will be some threshhold variables that will be set to 10 to determine what "low student count" is and what "high student count" is, and they will be easy to access and change. Conditional logic will throw a fail if the number of students is lower than the threshold, and also warn if it is higher than the warning threshold for high student count. 
 
 ### Used Libraries
-
+<!--
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -31,7 +29,7 @@ This audit takes a list of course ID's. Then for each course ID the audit will p
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
 #### *Preliminary Design Approved By:* 
