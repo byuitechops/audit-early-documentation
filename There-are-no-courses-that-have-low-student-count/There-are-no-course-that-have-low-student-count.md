@@ -1,5 +1,5 @@
 # Project Capture Document for Audit: _There-are-no-courses-that-have-low-student-count_ 
-#### *Author: Matt Wyndham*
+#### *Author: Matt Wyndham, Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 8, 15:55*
 ## Background
