@@ -1,6 +1,6 @@
-# Key Components Doc for Audit: New Gradebook
+# Key Components Doc for Audit: Disscussion Associations
 #### *Author: John Reiley*
-#### *Date: July 10, 2019*
+#### *Date: July 17, 2019*
 
 # Preliminary Design
 
@@ -11,11 +11,23 @@
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-The audit will make an API call to the following endpoint: `/courses/:course_id/features/enabled`  
-The returned string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will pass, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the audit will fail.
+1. An API call will be made to the endpoint `/courses/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
 
+    `[ { "blueprint_course": { "id": 35764 } } ]`
+
+2. The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/courses/:course_id/discussion_topics` .
+
+3. The `group_category_id` member of the `discussion_topic` objects for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object will be fetched using the following API call: `/accounts/:account_id/group_categories` .
+
+4. The following members of the `group_category` object will then be compared:
+    - `name`
+    - `role`
+    - `self_signup`
+    - `auto_leader`
+    - `group_limit`
+ 
 ### Used Libraries
-- HttpClient
+- Canvas Wrapper
 
 
 
