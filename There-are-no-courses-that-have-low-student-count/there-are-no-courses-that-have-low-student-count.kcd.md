@@ -12,7 +12,7 @@
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-This audit takes a list of course ID's. Then for each course ID the audit will call `/api/v1/courses/:course_id/users?enrollment_type[]=student` to get a list of students. There will be some threshhold variables that will be set to 10 to determine what "low student count" is and what "high student count" is, and they will be easy to access and change. Conditional logic will throw a fail if the number of students is lower than the threshold, and also warn if it is higher than the warning threshold for high student count. 
+This audit takes a list of course ID's. Then for each course ID the audit will call `/api/v1/courses/:course_id/users?enrollment_type[]=student` to get a list of students. There will be some threshhold variables that will be set to determine what "low student count" is (10-) and what "high student count" is (50+), and they will be easy to access and change. Conditional logic will throw a fail if the number of students is lower than the threshold, and also warn if it is higher than the warning threshold for high student count. 
 
 ### Used Libraries
 <!--
