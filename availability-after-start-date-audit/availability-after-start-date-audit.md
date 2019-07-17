@@ -42,5 +42,5 @@ Audit Project class
 **Priority:** High
 
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By:* Aaron Shiffler
+#### *Approval Date:* 16 July 2019
