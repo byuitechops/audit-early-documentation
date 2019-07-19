@@ -13,8 +13,9 @@ We will create an audit that checks every completed course after setup to see if
 # Requirements
 ### General Requirements
 - **Pass:** If the sis instructor is enrolled in the course as an Instructor.
-- **Fail:** If the sis instructor is not enrolled, or enrolled as a student or TA.
-- **Warn:** If the sis instructor is enrolled as an alternate type of Instructor.
+- **Fail:** If the sis instructor is not enrolled.
+- **Fail:** If the sis instructor does not have the correct instructor role.
+
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.

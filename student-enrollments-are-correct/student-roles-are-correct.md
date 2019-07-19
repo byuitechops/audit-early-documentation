@@ -4,7 +4,7 @@
 #### *Date: 2019 July 8, 4:46*
 ## Background
 
-Some classes after their conversion could have a problem with not having student roles correct. This could be an issue because students need to have the right roles and if that's not the case we would have problems. We need to avoid this issue. This audit will get the api call to get student roles for all given course codes and will ensure that students are enrolled with the right role. 
+Some classes could have a problem with not having student roles correct. This could be an issue because students need to have the right roles and the right permissions. This audit will get the api call to get student roles for all given course codes and will ensure that students are enrolled with the right role. 
 
 -----
 
@@ -16,11 +16,9 @@ We are creating this audit so we can check whether students have the right role 
 
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
-Pass: Students have the student role
+ - **Pass:** Students have the student role
+ - **Fail:** If a student doesn't have student roll.
 
-Warning:
-
-Fail: If a student doesn't have student roll.
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
