@@ -32,8 +32,8 @@ This audit takes a list of course ID's. Then for each course ID the audit will c
 -->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 19 July 2019*
 
 # Full Design
 
