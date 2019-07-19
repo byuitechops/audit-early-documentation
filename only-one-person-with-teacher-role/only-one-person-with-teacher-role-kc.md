@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![Magic Box](TeachersBox.jpg)
+![Magic Box](images/TeachersBox.jpg)
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
