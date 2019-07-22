@@ -1,13 +1,13 @@
 # Project Capture Document for Audit: _Instructor-has-correct-role_ 
-#### *Author: Matt Wyndham*
+#### *Author: Matt Wyndham, Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
-#### *Date: 2019 July 8, 15:55*
+#### *Date: 2019 July 22, 9:09*
 ## Background
-Sometimes when course setup is done an instructor will accidentally be enrolled as something else in their course. This prevents them from fulfilling their duties and provides a poor experience for students.
+Sometimes when course setup is done an instructor will accidentally be enrolled as something else in their course, or not enrolled in their course entirely. This prevents them from fulfilling their duties and provides a poor experience for students.
 
 -----
 ## Definition of Done
-We will create an audit that checks every completed course after setup to see if the instructor for the course is properly enrolled as an instructor.
+We will create an audit that checks every completed course after setup to see if the instructor is enrolled in a given course, and if the instructor for the course is properly enrolled as an instructor.
 
 -----
 # Requirements
