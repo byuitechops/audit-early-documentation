@@ -1,4 +1,4 @@
-# Key Components Doc for Instructor Enrollments Are Correct
+# Key Components Doc for Students Enrollments Are Correct
 #### *Author: Jake Schwantes*
 #### *Date: 07/22/2019*
 
@@ -35,8 +35,8 @@ Canvas API Wrapper
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 22 July 2019*
 
 # Full Design
 
