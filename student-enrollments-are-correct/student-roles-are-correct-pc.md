@@ -1,9 +1,10 @@
-# Project Capture Document for Audit: _Instructor-has-correct-role_ 
+# Project Capture Document for Audit: _Student Enrollments Are Correct_ 
 #### *Author: Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 22, 9:09*
+
 ## Background
-Sometimes when course setup is done students will accidentally be enrolled as something else in their course, or not enrolled in their course entirely. This could be an issue if students have more permissions than they should.
+Sometimes when course setup is done students will accidentally be enrolled as something else in their course, or not enrolled in their course entirely. This could be an issue if students have more permissions than they should. This audit will ensure that students are enrolled in the correct course by looking at BYU-I's data and ensuring that the students have the correct roles.
 
 -----
 ## Definition of Done
@@ -43,5 +44,5 @@ Audit Project class
 **Priority:** High
 
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 22 July 2019*
