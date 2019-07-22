@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![magic box chart for the instructor enrollments being correct](images/instructor-enrollments.jpg)
+![magic box chart for the instructor enrollments being correct](images/student-enrollments.jpg)
 
 ## Explanation of Design
 The aduit will get the user(s) that are enrolled as online instructors from canvas api using `/api/v1/{course_id:}/users`, 
