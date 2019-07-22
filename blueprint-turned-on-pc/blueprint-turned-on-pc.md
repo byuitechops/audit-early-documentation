@@ -49,5 +49,5 @@ Audit Project class
 <!-- What priority is this audit? -->
 Med
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 22 July 2019*
