@@ -9,11 +9,11 @@
 ![magic box chart for the instructor enrollments being correct](images/student-enrollments.jpg)
 
 ## Explanation of Design
-The aduit will get the user(s) that are enrolled as online instructors from canvas api using `/api/v1/{course_id:}/users`, 
-and it will also get the correct instructor's information from LMSData. The audit will find the teacher user object 
-that associates with the correct instructor by checking the information given by LMSData. If the instructor is not 
-enrolled, the audit will fail. If the instructor is enrolled, the audit will check the instructor's user object to 
-ensure it has the correcct instructor role. If it is correct, the audit will pass. Otherwise, it will fail.
+The aduit will get the user(s) that are enrolled as students from canvas api using `/api/v1/{course_id:}/users`, 
+and it will also get the correct students' information from LMSData. The audit will find the student's user objects 
+that associates with the correct students by checking the information given by LMSData. If all students are not 
+enrolled, the audit will fail. If the students are enrolled, the audit will check the students's user objects to 
+ensure they have correct student roles. If it is correct, the audit will pass. Otherwise, it will fail.
 
 ### Used Libraries
 Canvas API Wrapper
