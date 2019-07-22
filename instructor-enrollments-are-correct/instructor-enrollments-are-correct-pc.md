@@ -1,4 +1,4 @@
-# Project Capture Document for Audit: _Instructor-has-correct-role_ 
+# Project Capture Document for Audit: _Instructor-enrollments-are-correct_ 
 #### *Author: Matt Wyndham, Jake Schwantes*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 22, 9:09*
