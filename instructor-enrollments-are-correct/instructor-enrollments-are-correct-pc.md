@@ -3,7 +3,7 @@
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 22, 9:09*
 ## Background
-Sometimes when course setup is done an instructor will accidentally be enrolled as something else in their course, or not enrolled in their course entirely. This prevents them from fulfilling their duties and provides a poor experience for students.
+Sometimes when course setup is done an instructor will accidentally be enrolled as something else in their course, or not enrolled in their course entirely. This prevents them from fulfilling their duties and provides a poor experience for students. This audit will ensure that the instructors are enrolled in a given course, and that his/her role is set correctly as 'teacher'.
 
 -----
 ## Definition of Done
@@ -43,5 +43,5 @@ Audit Project class
 **Priority:** High
 
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 22 July 2019*
