@@ -1,29 +1,26 @@
-# Key Components Doc for Instructor has the correct role
-#### *Author: Matt Wyndham*
+# Key Components Doc for Instructor Enrollments Are Correct
+#### *Author: Matt Wyndham, Jake Schwantes*
 #### *Date: 07/19/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![magic box chart for the instructor having the correct role](images/InstructorCorrectRole.jpg)
-
-<!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
+![magic box chart for the instructor enrollments being correct](images/InstructorCorrectRole.jpg)
 
 ## Explanation of Design
-The audit will get a list of course ID's. The aduit will loop through each of the course ID's and will get the list of users that are enrolled as online instructors from canvas api. Then the audit will check if that list is greater than 0. If it is then the course will pass the audit. Otherwise it will fail.
+The aduit will get the user(s) that are enrolled as online instructors from canvas api using `/api/v1/{course_id:}/users`, and it will also get the correct instructor's information from LMSData. The audit will find the teacher user object that associates with the correct instructor by checking the information given by LMSData. If the instructor is not enrolled, the audit will fail. If the instructor is enrolled, the audit will check the instructor's user object to ensure it has the correcct instructor role. If it is correct, the audit will pass. Otherwise, it will fail.
 
 
 ### Used Libraries
 Canvas API Wrapper
 
-## Things to Consider Before Getting Project Approved
+<!--## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -31,6 +28,7 @@ Canvas API Wrapper
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
+-->
 
 -----
 
@@ -92,3 +90,6 @@ Expected Outcome:
  - UML Class Diagram (a must for object oriented projects) -->
 
 
+<!--
+"instructor enrollments are correct" and "instructors have correct role" had similar logic. I merged the two audits into one and merged fail conditions as well, putting both project captures and key components into individual files in one folder.
+-->
