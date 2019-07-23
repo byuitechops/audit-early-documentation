@@ -75,5 +75,5 @@ Audit Project class
     Currently the plan is to finish this audit by September 1st 2019
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*
