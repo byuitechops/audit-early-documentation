@@ -1,5 +1,5 @@
 # Project Capture Document for Audit: End Dates
-#### *Author: Jake Schwantes*
+#### *Author: Jake Schwantes, Kaylee Hartzog*
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 9, 3:21*
 ## Background
@@ -41,5 +41,5 @@ Audit Project class
  
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*
