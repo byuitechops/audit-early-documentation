@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![alt text](new-gradebook-mbc.jpg)
+![alt text](images/new-gradebook-mbc.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 

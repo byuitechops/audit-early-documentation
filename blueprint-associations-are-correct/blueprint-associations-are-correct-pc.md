@@ -15,7 +15,7 @@ Don't Example:
     points of data. Additionally, we have no standard for code templates. We don't want to add a lot of overhead to setting up a project
     with templates and code setup.
 -->
-Durring course copy, courses could have their blueprint associations disorganized from what they are supposed to be. This causes a great deal of headache to fix the blueprint associations, taking time and money from the University and its employees. 
+During course copy, courses could have their blueprint associations disorganized from what they are supposed to be. This causes a great deal of headache to fix the blueprint associations, taking time and money from the University and its employees. 
 
 -----
 ## Definition of Done
@@ -69,5 +69,5 @@ Audit Project class
 Med
 
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 22 July 2019*

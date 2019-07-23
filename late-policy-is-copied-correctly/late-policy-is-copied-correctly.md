@@ -62,4 +62,8 @@ Priority:
 -----
 
 #### *Approved By: Jake Schwantes* 
+<<<<<<< HEAD
 #### *Approval Date: 19 July 2019*
+=======
+#### *Approval Date: 23 July 2019*
+>>>>>>> d19600611673e0981320bb89cab5c07a0865960d

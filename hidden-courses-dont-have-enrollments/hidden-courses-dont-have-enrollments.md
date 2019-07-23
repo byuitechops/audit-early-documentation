@@ -6,19 +6,18 @@
 ---
 
 ## Background
-This audit will make sure that no hidden courses have enrollments. This audit will check for that and fail if there are enrollments in hidden courses.
 
 -----
+We don't want students to accidentally be enrolled in a non-public course. This audit will ensure that no hidden courses have enrollments. It will make the the call to return a course object. We can check the it is public, and if there are enrollments. If it is published, it will fail if there are enrollments.
 
 ## Definition of Done
 
 We are creating an audit that will pass only if hidden courses have no enrollments. We will do this by making the api call to get enrollments and determining whether a course is hidden, then making sure that there are no enrollments.
+
 # Requirements
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
 Pass: If a course is hidden and has no enrollments.
-
-Warning: If a course is not hidden and has no enrollments
 
 Fail: If a hidden course has enrollments.
 ### Input Requirements
@@ -46,6 +45,6 @@ Audit Project class
 <!-- What priority is this audit? -->
 -----
 The deadline is Sep 1, 2019.
-The priority is medium-low?
-#### *Approved By:* 
-#### *Approval Date:*
+The priority is low.
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*

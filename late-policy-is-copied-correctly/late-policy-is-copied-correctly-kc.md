@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![alt text](late-policy-is-copied-correctly.jpg)
+![alt text](images/late-policy-is-copied-correctly.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
@@ -96,8 +96,8 @@ Expected Outcome:
 
 -----
 
-#### *Full Design Approved By:* 
-#### *Full Design Approval Date:*
+#### *Full Design Approved By:Jake Schwantes* 
+#### *Full Design Approval Date: 23 July 2019*
 
 
 <!-- Diagram Types:

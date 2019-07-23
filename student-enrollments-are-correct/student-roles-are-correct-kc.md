@@ -1,43 +1,29 @@
-# Key Components Doc for Audit: Assignment Association
-#### *Author: John Reiley*
-#### *Date: July 17, 2019*
+# Key Components Doc for Students Enrollments Are Correct
+#### *Author: Jake Schwantes*
+#### *Date: 07/22/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](images/assignment-associations.jpg)
-
-<!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
+![magic box chart for the instructor enrollments being correct](images/student-enrollments.jpg)
 
 ## Explanation of Design
-1. An API call will be made to the endpoint `/courses/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
-
-    `[ { "blueprint_course": { "id": 35764 } } ]`
-
-2. The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/courses/:course_id/assignments` .
-
-3. The `group_category_id` member of each `assignment` object for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object will be fetched using the following API call: `/accounts/:account_id/group_categories` .
-
-4. The following members of the `group_category` object will then be compared:
-    - `name`
-    - `role`
-    - `self_signup`
-    - `auto_leader`
-    - `group_limit`
+The aduit will get the user(s) that are enrolled as students from canvas api using `/api/v1/{course_id:}/users`, 
+and it will also get the correct students' information from LMSData. The audit will find the student's user objects 
+that associates with the correct students by checking the information given by LMSData. If all students are not 
+enrolled, the audit will fail. If the students are enrolled, the audit will check the students's user objects to 
+ensure they have correct student roles. If it is correct, the audit will pass. Otherwise, it will fail.
 
 ### Used Libraries
+Canvas API Wrapper
 
-
-
-
-## Things to Consider Before Getting Project Approved
+<!--## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -45,11 +31,12 @@
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
+-->
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 22 July 2019*
 
 # Full Design
 
@@ -104,3 +91,8 @@ Expected Outcome:
  - Data Flow (I think this will be the most popular)
  - Structure Charts (This is really good for showing input and output of every function)
  - UML Class Diagram (a must for object oriented projects) -->
+
+
+<!--
+"instructor enrollments are correct" and "instructors have correct role" had similar logic. I merged the two audits into one and merged fail conditions as well, putting both project captures and key components into individual files in one folder.
+-->

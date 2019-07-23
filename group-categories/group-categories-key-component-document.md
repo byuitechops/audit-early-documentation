@@ -6,7 +6,7 @@
 
 ## Magic Box Chart
 
-![Group Categories Magic Box Chart](./group-categories-magic-box.jpg)
+![Group Categories Magic Box Chart](images/group-categories-magic-box.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
