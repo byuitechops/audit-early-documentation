@@ -58,5 +58,5 @@ Priority:
 
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*
