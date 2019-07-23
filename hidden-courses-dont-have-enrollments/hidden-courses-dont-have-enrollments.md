@@ -18,8 +18,6 @@ We are creating an audit that will pass only if hidden courses have no enrollmen
 <!-- What counts as pass/fail/warn? -->
 Pass: If a course is hidden and has no enrollments.
 
-Warning: If a course is not hidden and has no enrollments
-
 Fail: If a hidden course has enrollments.
 ### Input Requirements
 #### Source of Inputs
@@ -47,5 +45,5 @@ Audit Project class
 -----
 The deadline is Sep 1, 2019.
 The priority is low.
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*
