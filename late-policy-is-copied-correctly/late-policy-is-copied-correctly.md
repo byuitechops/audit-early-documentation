@@ -21,8 +21,11 @@ We are creating an audit that will check to make sure the late policy is copied 
 The audit will pass when: The late policy matches the semester blueprint
 
 The audit will fail when: The late policy does not match the semester blueprint 
+
+The audit will fail when: New grade book is not on
  
-The audit will warn when: "Auto apply" is enabled but there is no point deduction for late or unsubmitted work
+The audit will fail when: If there is no late policy
+<!--The audit will warn when: "Auto apply" is enabled but there is no point deduction for late or unsubmitted work-->
 
 ### Input Requirements
 #### Source of Inputs
@@ -58,5 +61,5 @@ Priority:
 
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 19 July 2019*

@@ -12,22 +12,26 @@
 
 ## Explanation of Design
 
-An API call will be made to the endpoint `/course/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
+1. An API call will be made to the endpoint `/course/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
 
-`[ { "blueprint_course": { "id": 35764 } } ]`
+    `[ { "blueprint_course": { "id": 35764 } } ]`
 
-The id member value will then be extracted. The following API calls will then be made with the course id and course blueprint id:  
-1. `/course/:course_id/features/enabled`  
-2. `/course/:course_id/late_policy`
+2. The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/course/:course_id/features/enabled`  
 
-The first API call, which returns an array of enabled features, will be used to determine whether or not the "new gradebook" feature is enabled. If not, there is a possibilty that the late policy does not exist.   
+    This returns an array of enabled features, which will be used to determine whether or not the "new gradebook" feature is enabled (`[..."new_gradebook",...]`). If not enabled, there is a possibilty that the late policy does not exist and the audit will **fail**.
 
-If so, the second API call will get the late policy for the course and its blueprint which will then be compared.            
+    A late policy will only exist under the following conditions:   
+    * "new gradebook" is or has been previously enabled  
+    *  late policy settings have been adjusted
+
+3. If "new gradebook" is enabled, the second API call will get the late policy for the course and its blueprint. The keys of both late policies will then be compared. The audit will **pass** if they are the same.
+        
+    _Note: If there are no permissions to access the late policy, an **error** message will be given._
 
 ### Used Libraries
 - HttpClient
 
-## Things to Consider Before Getting Project Approved
+<!-- ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
@@ -40,12 +44,12 @@ If so, the second API call will get the late policy for the course and its bluep
 - What will I do to learn it (prototypes/tutorials/research time limit?)
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
-- Is there a deliverable that can be created during the learning process?
+- Is there a deliverable that can be created during the learning process? -->
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 19 July 2019*
 
 # Full Design
 
