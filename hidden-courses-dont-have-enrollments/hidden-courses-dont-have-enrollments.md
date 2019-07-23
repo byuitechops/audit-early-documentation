@@ -8,11 +8,12 @@
 ## Background
 
 -----
-This audit will ensure that no hidden courses have enrollments. It will make the `/api/v1/courses/{course id:}` call and return a course object. We can check the "is_published" key to determine if it is public, and the "enrollments" key to determine if there are enrollments. If it is published, it will fail if there are enrollments. It will warn if a course is published and does not have enrollments.
+We don't want students to accidentally be enrolled in a non-public course. This audit will ensure that no hidden courses have enrollments. It will make the the call to return a course object. We can check the it is public, and if there are enrollments. If it is published, it will fail if there are enrollments.
 
 ## Definition of Done
 
 We are creating an audit that will pass only if hidden courses have no enrollments. We will do this by making the api call to get enrollments and determining whether a course is hidden, then making sure that there are no enrollments.
+
 # Requirements
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
