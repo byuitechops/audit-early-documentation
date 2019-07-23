@@ -92,8 +92,8 @@ Expected Outcome:
 
 -----
 
-#### *Full Design Approved By:* 
-#### *Full Design Approval Date:*
+#### *Full Design Approved By:Jake Schwantes* 
+#### *Full Design Approval Date: 23 July 2019*
 
 
 <!-- Diagram Types:
