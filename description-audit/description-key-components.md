@@ -31,8 +31,8 @@ This audit will test the description of a given course. The audit is passed a Li
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 23 July 2019*
 
 # Full Design
 
