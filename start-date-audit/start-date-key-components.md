@@ -14,7 +14,7 @@
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
 
 This audit will test the start date of a given course. There will be a class StartDateAudit that will inherit from the Audit class.
-the ExecuteAudits function will get a list of course codes as a parameter and then will make an HTTP request for each course code to get
+the ExecuteAudits function will get a course code as a parameter and then will make an  API call: https://byui.instructure.com//api/v1/courses/course_id to get
 that course and then test the correctness of the Start Date property of that course. For each course it will create a new AuditResult 
 object and add it to a list of AuditResults. Finally, it will return that list of AuditResults.
 
@@ -40,8 +40,8 @@ Maybe use the canvas wrapper(if ready by then)
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 23 July 2019*
 
 # Full Design
 

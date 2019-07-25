@@ -24,9 +24,7 @@
 
     Pass: The start date is set in the correct format and it is set correctly according to the expected semester.
 
-    Fail: The start date is not in the correct format, isn't set at all, or isn't the date we expect.
-
-    Warn: Some of the parts of the date are set correctly but at least one of them isn't.
+    Fail: If any part of the start date is not set correctly.
 
 ### Input Requirements
 #### Source of Inputs
@@ -77,5 +75,5 @@ Audit Project class
     Currently the plan is to finish this audit by September 1st 2019
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 23 July 2019*

@@ -36,8 +36,8 @@ The returned string will then be checked for the substring "`new_gradebook`".  I
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 19 July 2019*
 
 # Full Design
 
