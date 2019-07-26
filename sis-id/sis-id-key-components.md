@@ -27,7 +27,8 @@ Testing the SIS ID string:
         or check if it's equals to CurrentYear or higher?
     4. Check if the third element equals to "Fall", "Winter", or "Spring" (or "Summer" ???)
     5. Check the fourth element - Class Code (not sure how to do that or what exactly to check yet)
-    6. 
+    6. Check the fifth element - term. As I understand it can be either Block1, Block2, or blank. Blank means it's a full semester class. Check the length of the array. If length = 5, that means term was blank so fifth element is actually the email. If length = 6, then the fifth element has to be Block1 or Block2. 
+    7. Check sixth(or sometimes fifth) element - email. The email should be the email of the professor in charge of the course(?). So it starts with his/her username and end with "@byui.edu".
 
 
 Maybe use the canvas wrapper(if ready by then)
