@@ -3,18 +3,18 @@
 #### *Stakeholder(s): Dan Gordon*
 #### *Date: 2019 July 10, 12:52*
 ## Background
-Many of the courses have a short course description in order to help students understand a bit more about the course. The description is optional for a course to have. This audit will check to see if a course has a description, and if it does, it will return it.
+Many of the courses have a short course description in order to help students understand a bit more about the course. The description is optional for a course to have. This audit will check to see if a course's description in Canvas is the same as in the CX data.
 
 -----
 ## Definition of Done
-This audit will check the courses to see if they contain a course description, and if they do, it will return the description.
+This audit will check the courses to see if they contain a course description, and if they do, it will check it against CX to ensure it is correct.
 
 -----
 # Requirements
 ### General Requirements
 - **Pass:** Audit returns a course description.
-- **Fail:** Audit does not return a course description (because there is none).
-- **Warn:** Description may not be formatted correctly.
+- **Fail:** Audit returns data from Canvas and CX to show discrepancies.
+- **Warn:** None?
 <!-- What counts as pass/fail/warn? -->
 ### Input Requirements
 #### Source of Inputs
