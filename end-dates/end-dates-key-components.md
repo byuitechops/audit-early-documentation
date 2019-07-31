@@ -9,11 +9,11 @@
 ![End Date Audit Key Components](images/magic-box.jpg)
 
 ## Explanation of Design
-This audit will test the end date of a given course. The audit is passed a List of strings called CourseCodes. For each of the course codes in the list, the audit does an HTTP Request in order to get the JSON for the Course. Using the JSON, it will take the value that the course has for end date, and compare it to the correct end date. If the dates for the end dates match, then the audit passes. If the dates for the end dates don't match, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
+This audit will test the end date of a given course. For each course code, we will make an API call to: `/api/v1/courses/course_id` to get the course and test the `end_date` property of that course. Using the JSON, it will take the value that the course has for end date, and compare it to the correct end date. If the dates for the end dates match, then the audit passes. If the dates for the end dates don't match, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
 
 
 ### Used Libraries
-
+<!-->
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
@@ -32,11 +32,11 @@ Ask Corey maybe.
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 

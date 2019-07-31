@@ -9,17 +9,17 @@
 ![Audit Key Components](images/magic-box.jpg)
 
 ## Explanation of Design
-This audit will test the subaccount of a given course. The audit is passed a List of strings called CourseCodes. For each of the course codes in the list, the audit does an HTTP Request in order to get the JSON for the Course using the endpoint: `/courses/:course_id/settings`. Using the JSON, it will take the value that the course has for subaccount. If the subaccount matches the master list, then the audit passes. If the subaccount doesn't match the master list, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
+This audit will test the subaccount of a given course. For each course code it receives as aparameter, the audit makes an API call to: `/api/v1/courses/59588?include[]=subaccount` to get the course and test the `subaccount_name` property of that course. If the subaccount matches the master list, then the audit passes. If the subaccount doesn't match the master list, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
 
 ### Used Libraries
 
+<!-->
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -27,11 +27,11 @@ This audit will test the subaccount of a given course. The audit is passed a Lis
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 
