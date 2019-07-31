@@ -1,17 +1,17 @@
 # Key Components Doc for Hidden Course Hace Correct Status
-#### *Author: Cameron Thompson*
+#### *Author: Cameron Thompson and Evgeniy Bekker*
 #### *Date: 07/15/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](images/hiddenCoursesHaveCorrectVisability.png)
+![Magic box for: hidden courses have correct status audit](images/magic-box.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-The audit will get a list of course ID's. The aduit will loop through each of the course ID's and will get the course object. Then the audit will check the "is_public" property to check if a course is public or not. If it is then the course will fail the audit. 
+The audit will take a course code as a parameter and will get the course object. Then the audit will check the `is_public` property of the course to check if it's hidden or not. The audit will get a list of all hidden courses from the CX database and check if the given course is on that list. The audit will pass if the course is on that hidden list and the course's `is_public` property is set to `false`, or if the course is not on the hidden list and its `is_public` property is set to `true`. Otherwise, the audit will fail.
 
 
 ### Used Libraries

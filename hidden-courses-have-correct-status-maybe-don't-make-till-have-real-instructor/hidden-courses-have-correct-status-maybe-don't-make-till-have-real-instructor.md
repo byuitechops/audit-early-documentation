@@ -4,7 +4,7 @@
 #### *Date: 2019 July 8, 15:55*
 ## Background
 
-Some courses durring copy could run into an issue where the hidden courses that should be hidden are no longer hidden and courses that shouldn't be hidden are now hidden. 
+Some courses during copy could run into an issue where the hidden courses that should be hidden are no longer hidden and courses that shouldn't be hidden are now hidden. 
 
 -----
 ## Definition of Done
@@ -18,7 +18,6 @@ A course will pass when: *A course that is supposed to be hidden is hidden*
 
 A course will fail when: *A course that is supposed to be hidden is not hidden or a course that is not supposed to be hidden is hidden*
 
-A course will warn when:
 ### Input Requirements
 #### Source of Inputs
 All inputs will be received via the encompassing Audit Project.
@@ -45,5 +44,5 @@ Audit Project class
 <!-- What priority is this audit? -->
 Low
 -----
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 31 July 2019*
