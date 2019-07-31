@@ -33,7 +33,7 @@ Not sure yet
 
 ### Questions/Concerns
 
-- If a student doesn't complete a course, does that mean they are not allowed to see the course after the course ends?
+- If a student doesn't complete a course, does that mean they are not allowed to see the course after the course ends? (We think yes, but Canvas handles this issue itself).
 
 -----
 

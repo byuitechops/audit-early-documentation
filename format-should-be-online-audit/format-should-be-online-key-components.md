@@ -9,7 +9,7 @@
 ![Format Should Be Online Key Components](images/magic-box.jpg)
 
 ## Explanation of Design
-This audit will test the `course_format` key of a given course. The audit is passed a List of strings called CourseCodes. For each of the course codes in the list, the audit does an HTTP Request in order to get the JSON for the Course. Using the JSON, it will take the value that the course has `course_format`. If the format is set to "online", then the audit passes. If the value is anything else, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
+This audit will test the `course_format` key of a given course. The audit is passed a Course Code string. The audit does an API call to `/api/v1/courses/{courseCode}`. Using the response, it will take the value that the course has for `course_format`. Then we will check CX data to see if they are the same; if so then the audit passes. If the value is anything else, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
 
 
 ### Used Libraries
@@ -35,8 +35,8 @@ Ask Corey maybe.
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 

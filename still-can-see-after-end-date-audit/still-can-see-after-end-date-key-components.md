@@ -1,5 +1,5 @@
 # Key Components Doc for Still Can See After End Date Audit
-#### *Author: Kaylee Hartzog*
+#### *Author: Kaylee Hartzog & Seth Bolander*
 #### *Date: 2019 July 15, 14:03*
 
 # Preliminary Design
@@ -11,17 +11,17 @@
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
-This audit will test the workflow_state of a given course. The audit is passed a List of strings called CourseCodes. For each of the course codes in the list, the audit does an HTTP Request in order to get the JSON for the Course. Using the JSON, it will take the value that the course has for workflow_state. If the workflow_state is set to completed, then the audit passes. If the workflow_state is not set to completed, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
+This audit will test the `restrict_student_past_view` of a given course. The audit is passed a single Course Code string. The audit will make an API call to the course (`/api/v1/courses/{courseCode}`) and will take the value that the course has for `restrict_student_past_view`. If the `restrict_student_past_view` is set to `false`, then the audit passes (because students aren't restricted from seeing the course after the end date). If the `restrict_student_past_view` is not set to `true`, then the audit will fail. The result of the audit will be passed into a list of audit results and then this list is returned.
 
 ### Used Libraries
 
+<!--
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -29,11 +29,11 @@ This audit will test the workflow_state of a given course. The audit is passed a
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 
