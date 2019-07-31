@@ -9,7 +9,7 @@
 ![Audit Key Components](images/magic-box.jpg)
 
 ## Explanation of Design
-This audit will test the subaccount of a given course. For each course code it receives as aparameter, the audit makes an API call to: `/api/v1/courses/59588?include[]=subaccount` to get the course and test the `subaccount_name` property of that course. If the subaccount matches the master list, then the audit passes. If the subaccount doesn't match the master list, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
+This audit will test the subaccount of a given course. For each course code it receives as aparameter, the audit makes an API call to: `/api/v1/courses/59588?include[]=subaccount` to get the course and test the `subaccount_name` property of that course. If the subaccount matches the master list in CX data, then the audit passes. If the subaccount doesn't match the master list, then the audit will fail. The result of the audit will be passed into a list of audit results. Once all of the course codes have been processed, the audit will return that list of audit results.
 
 ### Used Libraries
 
