@@ -34,8 +34,16 @@ A failed audit can be caused by multiple different scenarios.
 <span style="color:yellow">Missing File Warning:</span> A warning will be issued when it finds any content which is not found in both courses. For example: Suppose there is a file that is locked in the blueprint, but that file cannot be found in the copied course. When this happens it will emit a missing file warning.
 <!-- What counts as pass/fail/warn? -->
 ### Input Requirements
+
 #### Source of Inputs
 All inputs will be passed in by the auditor.
+
+#### API Calls:
+Blueprint Subscriptions
+> GET /api/v1/courses/:course_id/blueprint_subscriptions
+
+Course Files
+> GET /api/v1/courses/:course_id/files
 
 #### Definition of Inputs
 <!-- TBD: do not fill out just yet -->
@@ -80,5 +88,5 @@ Locked files have lock and unlock dates. These dates are sure to be innactuate i
 
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 25 July 2019*

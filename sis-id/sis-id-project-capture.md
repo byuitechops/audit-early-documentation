@@ -27,10 +27,8 @@
         "campus/online.YEAR.Semester.ClassCode.duration.instructor_email" 
         ex. "Campus.2019.Fall.FAML 120.Block1.denniss@byui.edu"
 
-    Fail: The "sis_course_id" key of the course isn't set, isn't set to what we expect,
-        or isn't in the correct format.
-
-    Warn: It's set and is partially correct.
+    Fail: The "sis_course_id" key of the course isn't set, isn't set to what we expect, 
+        isn't in the correct format, or if any part of the SIS ID is wrong.
 
 ### Input Requirements
 #### Source of Inputs
@@ -79,5 +77,5 @@ Audit Project class
     Currently the plan is to finish this audit by September 1st 2019
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 30 July 2019*

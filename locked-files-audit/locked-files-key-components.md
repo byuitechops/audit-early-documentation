@@ -12,7 +12,14 @@
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-The audit will recieve an org unit id for a blueprint and a course copy. From there it will deserialize the josn from both courses into individual course file objects. It will then compare both of these objects and check wether they are from the same course, wether associated files have matching lock dates, and that those associated files have matching lock configurations. Once this is all done, the program will then generate errors, warnings, and successes from the results of these various audit functions.
+### API Calls:
+Blueprint Subscriptions
+> GET /api/v1/courses/:course_id/blueprint_subscriptions
+
+Course Files
+> GET /api/v1/courses/:course_id/files
+### General Flow:
+The audit will recieve an org unit id for a course. From there it will make a call to get the org unit for the blueprint course. Once it has the blueprint course Id, it will mkae two calls to the courses and then deserialize the json into individual course file objects. It will then compare both of these objects and check wether they are from the same course, wether associated files have matching lock dates, and that those associated files have matching lock configurations. Once this is all done, the program will then generate errors, warnings, and successes from the results of these various audit functions.
 
 ### Used Libraries
 None

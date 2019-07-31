@@ -14,7 +14,24 @@
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
 
 This audit will test the SIS ID of a given course. There will be a class SisIdAudit that will inherit from the Audit class.
-the ExecuteAudits function will get a list of course codes as a parameter and then will make an HTTP request for each course code to get that course and then test the correctness of the sis_course_id property of that course. For each course it will create a new AuditResult object and add it to a list of AuditResults. Finally, it will return that list of AuditResults.
+the ExecuteAudits function will get a course code as a parameter and then will make an API call: https://byui.instructure.com//api/v1/courses/course_id to get
+that course. It will test the correctness of the sis_course_id property of that course. For each course it will create a new AuditResult object and add it to a list of AuditResults. Finally, it will return that list of AuditResults.
+
+Testing the SIS ID string:
+    "campus/online.YEAR.Semester.ClassCode.duration.instructor_email" 
+    ex. "Campus.2019.Fall.FAML 120.Block1.denniss@byui.edu"
+
+    1. Split the SIS ID string into an array of strings with "." as the delimiter.
+    2. Check if the first element of the array is equals to "campus" or "online"
+    3. Check if the second element contains 4 digits, maybe check if it's 2019 or higher? 
+        (brainstorm about how exactly to do this) or check if it's equals to CurrentYear or higher?
+    4. Check if the third element equals to "Fall", "Winter", or "Spring" (or "Summer" ???)
+    5. Check the fourth element - Class Code (not sure how to do that or what exactly to check yet)
+    6. Check the fifth element - duration. As I understand, it can be either "Block1", "Block2", or "None".
+        None means it's a full semester class. 
+    7. Check sixth (or sometimes fifth) element - email. The email should be the email of the instructor of the
+       course(?) So it should start with his/her username and end with "@byui.edu".
+
 
 Maybe use the canvas wrapper(if ready by then)
 
@@ -38,8 +55,8 @@ Maybe use the canvas wrapper(if ready by then)
 
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 

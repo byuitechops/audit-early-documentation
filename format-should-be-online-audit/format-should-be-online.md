@@ -5,14 +5,14 @@
 
 ## Background
 
-    This "Format should be online" audit is part of a big audit project that BYUI IT department is working on.
-    The purpose of the Format should be online audit is to test whether a given course is set to be "online." 
+This "Format should be online" audit is part of a big audit project that BYUI IT department is working on.
+The purpose of the Format should be online audit is to test whether a given course has the correct format based on its subaccount. 
     
 -----
 
 ## Definition of Done
 
-    The audit needs to be able to successfully test whether a given course is set to be "online."
+The audit needs to be able to successfully test whether a given course is set to be "online."
 
 -----
 
@@ -21,11 +21,9 @@
 ### General Requirements
 <!-- What counts as pass/fail/warn? -->
 
-    Pass: The "course_format" key of the course is set to "online."
-
-    Fail: The "course_format" key of the course is set to anytything except "online."
-
-    Warn: Not sure yet
+**Pass**: The "course_format" key of the course is set to "online" for sub-account "BYUI Scaled" and "campus" for anything else.
+**Fail**: The "course_format" key of the course is not set or is not correct.
+**Warn**: None?
 
 ### Input Requirements
 #### Source of Inputs
@@ -54,9 +52,6 @@ Audit Project class
 
 ## Questions/Concerns
 
-    I'm not sure if I have the right idea about what this audit is supposed to check.
-    I'm not sure if I need to have anytything in the Warn section for this audit. 
-        (This audit seems pretty "black or white")
 -----
 
 ## Expectations

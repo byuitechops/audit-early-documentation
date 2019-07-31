@@ -33,6 +33,13 @@ A failed audit can be caused by multiple different scenarios.
 #### Source of Inputs
 All inputs will be passed in by the auditor.
 
+#### API Calls:
+Blueprint Subscriptions
+> GET /api/v1/courses/:course_id/blueprint_subscriptions
+
+Course Files
+> GET /api/v1/courses/:course_id/modules
+
 #### Definition of Inputs
 <!-- TBD: do not fill out just yet -->
 - The org unit ids of courses and their blueprints to make the comparisons for.
@@ -81,5 +88,5 @@ Locked files have lock and unlock dates. These dates are sure to be innactuate i
 
 -----
 
-#### *Approved By:* 
-#### *Approval Date:*
+#### *Approved By: Jake Schwantes* 
+#### *Approval Date: 25 July 2019*

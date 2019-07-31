@@ -12,8 +12,15 @@
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-Here is the general flow of the Audit:
-The audit will recieve an org unit id for a blueprint and a course copy. From there it will deserialize the json recieved from both courses into individual course module objects. It will then compare both of these objects and check wether they are from the same course, wether associated modules have matching lock dates and configurations. It will also check to make sure that these modules have matching prerequisites. Once this is all done, the program will then generate errors, warnings, and successes from the status objects passed in from the individual audit functions.  
+### API Calls:
+Blueprint Subscriptions
+> GET /api/v1/courses/:course_id/blueprint_subscriptions
+
+Course Files
+> GET /api/v1/courses/:course_id/modules
+
+### General Flow of the Audit:
+The audit will recieve an org unit id for a course. From there it will make a call to get the org unit for the blueprint course. Once it has the blueprint course Id, it will make two calls to the courses and then deserialize the json into individual course module objects. It will then compare both of these objects and check wether they are from the same course, wether associated modules have matching lock dates and configurations. It will also check to make sure that these modules have matching prerequisites. Once this is all done, the program will then generate errors, warnings, and successes from the status objects passed in from the individual audit functions.  
 
 ### Used Libraries
 None
