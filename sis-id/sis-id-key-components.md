@@ -25,7 +25,7 @@ Testing the SIS ID string:
     2. Check if the first element of the array is equals to "campus" or "online"
     3. Check if the second element contains 4 digits, maybe check if it's 2019 or higher? 
         (brainstorm about how exactly to do this) or check if it's equals to CurrentYear or higher?
-    4. Check if the third element equals to "Fall", "Winter", or "Spring" (or "Summer" ???)
+    4. Check if the third element equals to "Fall", "Winter", "Spring", or "Summer"
     5. Check the fourth element - Class Code (not sure how to do that or what exactly to check yet)
     6. Check the fifth element - duration. As I understand, it can be either "Block1", "Block2", or "None".
         None means it's a full semester class. 

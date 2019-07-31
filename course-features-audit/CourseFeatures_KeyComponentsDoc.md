@@ -1,25 +1,49 @@
-# Key Components Doc for Audit: New Gradebook
+# Key Components Doc for Audit: Course Features
 #### *Author: John Reiley*
-#### *Date: July 10, 2019*
+#### *Start Date: 2019 July 8*
+#### *Modified: 2019 July 31*
 
 # Preliminary Design
 
+## **New Gradebook:**
 ## Magic Box Chart
-
 ![alt text](images/new-gradebook-mbc.jpg)
 
-<!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
+## Explanation of Design
+The API call will be made with the course id: `/courses/:course_id/features/enabled`  
+The returned string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will **pass**, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the feature is not enabled and the audit will **fail**.
+
+---
+
+## **Late Policy Is Copied Correctly:**
+## Magic Box Chart
+![alt text](images/late-policy-is-copied-correctly.jpg)
 
 ## Explanation of Design
-The audit will make an API call to the following endpoint: `/courses/:course_id/features/enabled`  
-The returned string will then be checked for the substring "`new_gradebook`".  If it contains substring, the audit will pass, indicating the new gradebook feature is enabled for the course.  If it doesn't contain it, the audit will fail.
+1. An API call will be made to the endpoint `/course/:course_id/blueprint_subscriptions` which returns a blueprint subcription object like the following:  
+
+    `[ { "blueprint_course": { "id": 35764 } } ]`
+
+2. The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/course/:course_id/features/enabled`  
+
+    This returns an array of enabled features, which will be used to determine whether or not the "new gradebook" feature is enabled (`[..."new_gradebook",...]`). If not enabled, there is a possibilty that the late policy does not exist and the audit will **fail**.
+
+    A late policy will only exist under the following conditions:   
+    * "new gradebook" is or has been previously enabled  
+    *  late policy settings have been adjusted previously
+
+3. If "new gradebook" is enabled, the second API call will get the late policy for the course and its blueprint. The keys of both late policies will then be compared. The audit will **pass** if they are all the same.
+        
+    _Note: If there are no permissions to access the late policy, an **error** message will be given._
+
+
 
 ### Used Libraries
 - HttpClient
 
 
 
-## Things to Consider Before Getting Project Approved
+<!-- ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
@@ -32,12 +56,14 @@ The returned string will then be checked for the substring "`new_gradebook`".  I
 - What will I do to learn it (prototypes/tutorials/research time limit?)
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
-- Is there a deliverable that can be created during the learning process?
+- Is there a deliverable that can be created during the learning process? -->
 
 -----
 
 #### *Preliminary Design Approved By: Jake Schwantes* 
 #### *Preliminary Design Approval Date: 19 July 2019*
+
+---
 
 # Full Design
 
