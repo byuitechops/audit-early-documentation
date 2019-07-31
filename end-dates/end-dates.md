@@ -5,6 +5,7 @@
 ## Background
 -----
 Some classes could have a problem with not having the right end date. (e.g. A fall course should have its end date be in December. If it were in July, which is a spring end date, it would be incorrect and would need to be changed). This could be a problem because not having the right end dates could be a big issue for students. This is a high priority audit. This audit will make an api call to get all of the end dates, and make sure that they are correct.
+We will make an API call to: `/api/v1/courses/course_id` to get the course and test the `end_date` property of that course.
 
 ## Definition of Done
 -----
