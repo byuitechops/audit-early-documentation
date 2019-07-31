@@ -12,7 +12,7 @@
 
 ## Explanation of Design
 This audit is preformed through four sub-audits.
-### Group Categoriez Sub Audit
+### Group Categories Sub Audit
 - _Get Course Copy:_  We will start by grabbing the group_categories from the course copy using the following API call.
 
     /api/v1/courses/:course_id/group_categories
@@ -37,7 +37,7 @@ This audit is preformed through four sub-audits.
 
 
 - _Get Course Blueprint:_  We will then grab the groups from the course blueprint.
-- _Check Group Category Id:_ Once we have the copy and blueprint groups, we will make sure that the groups are all assoiated to the proper group category. Inorder to properly conduct the audit, we will need to make a call to the following API to get the GroupCategories from the Copy and the Blueprint.
+- _Check Group Category Id:_ Once we have the copy and blueprint groups, we will make sure that the groups are all assoiated to the proper group category. In order to properly conduct the audit, we will need to make a call to the following API to get the GroupCategories from the Copy and the Blueprint.
 
     /api/v1/courses/:course_id/group_categories
 
@@ -85,13 +85,13 @@ This audit is preformed through four sub-audits.
 ### Used Libraries
 Canvas API Wrapper
 
+<!--
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -99,11 +99,11 @@ Canvas API Wrapper
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 31 July 2019*
 
 # Full Design
 
