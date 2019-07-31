@@ -7,27 +7,16 @@ It is important for courses to be organized in the right Subaccount. Not having 
 
 -----
 ## Definition of Done
-This audit will go through the courses and make sure that they are organized under the correct subaccounts.
+This audit will go through the courses and make sure that they are organized under the correct subaccounts by comparing to CX data.
 
 -----
 # Requirements
-### General Requirements
-- **Pass:** Courses are in the right place (they have the correct sub account).
-- **Fail:** Courses are not in the right place (they don't have the correct sub accout).
+#### Pass
+Course subaccount in Canvas matches subaccount listed in CX data.
 
-### Input Requirements
-#### Source of Inputs
-All inputs will be received via the encompassing Audit Project.
-#### Definition of Inputs
-<!-- TBD: do not fill out just yet -->
-- Course Id(s) to run this audit on.
----
-### Output Requirements
-#### Destination
-Returned to the invoked method from the Audit Project.
-#### Definition of Outputs
-<!-- TBD: do not fill out just yet -->
-- Results of the Pass/Fail/Warn status of this audit and associated messages.
+#### Fail
+Course subaccount is incorrect.
+
 ---
 ### Questions/Concerns
 
