@@ -56,7 +56,7 @@ This audit is preformed through four sub-audits.
 
 - The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/courses/:course_id/assignments` .
 
-- The `group_category_id` member of each `assignment` object for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object will be fetched using the following API call: `/courses/:courses_id/group_categories` .
+- The `group_category_id` member of each `assignment` object for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object for the course and the blueprint will be fetched using the following API call: `/group_categories/:group_category_id` .
 
 - The following members of the `group_category` object will then be compared:
     - `name`
@@ -72,7 +72,7 @@ This audit is preformed through four sub-audits.
 
 - The id member value will then be extracted. The following API call will then be made with the course id and course blueprint id: `/courses/:course_id/discussion_topics` .
 
-- The `group_category_id` member of the `discussion_topic` objects for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object will be fetched using the following API call: `/courses/:course_id/group_categories` .
+- The `group_category_id` member of the `discussion_topic` objects for the blueprint and course will be compared.  If **both** values are **not null**, then the `group_category` object for the course and the blueprint will be fetched using the following API call: `/group_categories/:group_category_id` .
 
 - The following members of the `group_category` object will then be compared:
     - `name`
