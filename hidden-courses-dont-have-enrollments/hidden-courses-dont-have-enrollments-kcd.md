@@ -1,28 +1,28 @@
 # Key Components Doc for Hidden courses dont have enrollments
-#### *Author: Cameron Thompson*
+#### *Author: Cameron Thompson and Evgeniy Bekker*
 #### *Date: 7/15/2019*
 
 # Preliminary Design
 
 ## Magic Box Chart
 
-![alt text](images/hidden-courses-have-no-enrollments.png)
+![Key Components for: hidden courses don't have enrollments audit](images/hidden-courses-have-no-enrollments1.jpg)
 
 <!-- Think through the process as much as makes sense, and then create a magic box chart with the whiteboard and place it here. -->
 
 ## Explanation of Design
 <!-- Add explanation of the Magic Boxes image above. Answers to the prompts below may also be appropriate to include here. -->
-This audit takes in a list of course ID's. Then for each course it will look at the visability status and the enrollments. If the course is not visable and ther are no enrollments, then the course will pass. All other cases will fail the audit.  
+This audit takes a course code as a parameter. For each course it will make an API call to `api/v1/courses/{courseCode}/?include[]=total_students` and check the `is_public` property of that course. If it's set to `false`, meaning it is hidden, it will check if there are any students enrolled in that course by checking the `total_students` property. If it's greater than 0 there are students and the audit will fail. Any other case it will pass.
 
 ### Used Libraries
 
+<!-->
 ## Things to Consider Before Getting Project Approved
 - Are there any approved libraries that I can use? [Link to Approved Library List]
 - Are there design patterns that will help?  [Link to Design Patterns]
 - Can I design it so that it is a general tool instead of a specific solution?
 - How can it be easily expanded?
 - What does the minimum viable product look like?
-
 ## Prep for Learning Phase
 - What do I need to learn
 - How will I learn it
@@ -30,11 +30,11 @@ This audit takes in a list of course ID's. Then for each course it will look at 
 - What is the definition of done for my learning process
 - How do I measure the progress of learning
 - Is there a deliverable that can be created during the learning process?
-
+-->
 -----
 
-#### *Preliminary Design Approved By:* 
-#### *Preliminary Design Approval Date:*
+#### *Preliminary Design Approved By: Jake Schwantes* 
+#### *Preliminary Design Approval Date: 2 August 2019*
 
 # Full Design
 
